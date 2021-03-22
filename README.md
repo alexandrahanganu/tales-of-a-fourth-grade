@@ -5,22 +5,21 @@
 
 ## Functional requirements
 
- -   track absences, tardies and excuses (entered by parents, faculty, or staff)
--   manage from 1000 to 1 million students
+-   track absences, tardies and excuses (entered by parents, faculty, or staff)
 -   generate reports on student activities
 -   be accessible from the playground
 -   track student grades and assignments (completed and due)
 -   parent-teacher forums
 -   run as an SaaS system from a hosting center
--   must adhere to FERPA (Family Educational Rights and Privacy Act) security guidelines, found at [https://www2.ed.gov/policy/gen/guid/fpco/ferpa/index.html]
-  
+-   based on user priviledge can add excuses/grades/tardies/absences
 
 ## Nonfunctional requirements
 
--   company plans to undertake an aggressive national sales campaign
--   current competitor damaged by data breach
--   new CIO
--   main marketing pitch is around is flexibility, configurability, and (recently added) security
+-   User Friendly interface (due to the fact that it will be used by user with no digital competences
+- 	Security is top priority due to competitors data breach (hash over password, encription on grades and forum posts)
+-   manage from 1000 to 1 million students
+-   flexibility, configurability, and security are the most important functions
+-   Adhere to FERPA (Family Educational Rights and Privacy Act) security guidelines, found at [https://www2.ed.gov/policy/gen/guid/fpco/ferpa/index.html]
   
 
 ## Project structure – github
