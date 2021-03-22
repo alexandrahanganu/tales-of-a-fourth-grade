@@ -5,7 +5,7 @@
 
 ## Functional requirements
 
- -   track absences, tardies and excuses (entered by parents, faculty, or staff)
+-   track absences, tardies and excuses (entered by parents, faculty, or staff)
 -   manage from 1000 to 1 million students
 -   generate reports on student activities
 -   be accessible from the playground
@@ -23,24 +23,12 @@
 -   main marketing pitch is around is flexibility, configurability, and (recently added) security
   
 
-## Project structure – github
-
-  https://github.com/alexandrahanganu/tales-of-a-fourth-grade
-  
-
 ## Project stack - .NET 5/6; Blazor/Razor/Angular/React
 
   - .NET 5
   - Blazor/Razor
   - MySQL
 
-## ADH - [https://en.wikipedia.org/wiki/Architectural_decision](https://en.wikipedia.org/wiki/Architectural_decision)
+## Team
 
-  
-  
-
-## C4 Model diagrams
-
-  
-
-## SQ instance
+- 
