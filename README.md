@@ -5,13 +5,13 @@
 
 ## Functional requirements
 
--   track absences, tardies and excuses (entered by parents, faculty, or staff)
+-   track absences, tardies and excuses
 -   generate reports on student activities
 -   be accessible from the playground
 -   track student grades and assignments (completed and due)
 -   parent-teacher forums
 -   run as an SaaS system from a hosting center
--   based on user priviledge can add excuses/grades/tardies/absences
+-   based on user priviledge can add excuses/grades/tardies/
 
 ## Nonfunctional requirements
 
