@@ -1,0 +1,137 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "3.8.0.0",
+        "fileVersion": "3.8.0-5.20604.10 (9ed4b774)",
+        "semanticVersion": "3.8.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Program.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 18,
+                  "endLine": 12,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1121",
+          "level": "warning",
+          "message": "Extract the assignment of 'FirstName' from this expression.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentsController.cs",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 27,
+                  "endLine": 64,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1121",
+          "level": "warning",
+          "message": "Extract the assignment of 'LastName' from this expression.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentsController.cs",
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 26,
+                  "endLine": 65,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1121",
+          "level": "warning",
+          "message": "Extract the assignment of 'CNP' from this expression.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentsController.cs",
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 21,
+                  "endLine": 66,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "S1118": {
+          "id": "S1118",
+          "shortDescription": "Utility classes should not have public constructors",
+          "fullDescription": "Utility classes, which are collections of static members, are not meant to be instantiated.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1118",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S1121": {
+          "id": "S1121",
+          "shortDescription": "Assignments should not be made from within sub-expressions",
+          "fullDescription": "Assignments within sub-expressions are hard to spot and therefore make the code less readable. Ideally, sub-expressions should not have side-effects.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1121",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
