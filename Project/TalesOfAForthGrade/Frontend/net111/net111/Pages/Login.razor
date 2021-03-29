@@ -1,0 +1,33 @@
+﻿@page "/login"
+@using net111.Data
+@using System.Text.Json
+@inject IJSRuntime JsRuntime
+<h1>Login</h1>
+
+<form>
+    <label for="fname">CNP:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+    <label for="password">Password:</label><br>
+        <input type="text" id="password" name="password">
+</form>
+<br>
+<button class="btn btn-primary" @onclick="SendLogin">Login</button>
+
+<br>
+<p>Current register: @loggedin</p>
+<br>
+
+<div>
+    <span id="resultJson"></span>
+</div>
+
+@code {
+
+    private bool loggedin = false;
+    public Login login1 = new Login();
+
+    private void SendLogin()
+    {
+        loggedin = true;
+    }
+}
