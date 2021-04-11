@@ -1,0 +1,74 @@
+﻿@page "/TeacherPage"
+
+
+
+
+<h1>Teacher Page</h1>
+
+<div class="row justify-content-center m-3">
+    <div class="card-footer text-center">
+
+        <button @onclick="PressedButton1" class="btn btn-primary">Mate</button>
+        <button @onclick="PressedButton2" class="btn btn-primary">.Net</button>
+    </div>
+
+</div>
+
+@if (currentButton == 1)
+{
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nume</th>
+            <th>Nota</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Studentmate1</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>@currentButton</td>
+            <td>9</td>
+        </tr>
+    </tbody>
+</table>
+}
+else
+    @if(currentButton == 2)
+    {
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nume</th>
+            <th>Nota</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Student .Net1</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>Student .Net2</td>
+            <td>9</td>
+        </tr>
+    </tbody>
+</table>
+    }
+@code {
+
+    private int currentButton = 0;
+
+    private void PressedButton1()
+    {
+        currentButton = 1;
+    }
+
+    private void PressedButton2()
+    {
+        currentButton = 2;
+    }
+}
+
