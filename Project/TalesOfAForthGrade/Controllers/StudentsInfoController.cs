@@ -5,21 +5,24 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 
 using TalesOfAForthGrade.Repositories;
-using TalesOfAForthGrade.DTO;
+using TalesOfAForthGrade.DTO.Student;
 using TalesOfAForthGrade.Entities;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using MongoDB.Driver;
 
 namespace TalesOfAForthGrade.Controllers
 {
     [ApiController]
-    [Route("students")]
-    public class StudentsController : ControllerBase{
+    [Route("students/info")]
+    public class StudentsInfoController : ControllerBase{
         private readonly IStudentsRepository repository;
 
-        public StudentsController(IStudentsRepository repository){
+        public StudentsInfoController(IStudentsRepository repository){
             this.repository = repository;
         }
 
+        [Authorize(Roles = "Professor")]
         [HttpGet]
         public async Task<IEnumerable<StudentDTO>> GetStudentsAsync(){
             var students = (await repository.GetStudentsAsync())
@@ -27,6 +30,7 @@ namespace TalesOfAForthGrade.Controllers
             return students;
         }
 
+        [Authorize(Roles = "Professor")]
         [HttpGet("{id}")]
         public async Task<ActionResult<StudentDTO>> GetStudentAsync(Guid id){
             var student = await repository.GetStudentAsync(id);
@@ -38,13 +42,16 @@ namespace TalesOfAForthGrade.Controllers
             return student.AsDto();
         }
 
+        //[Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<ActionResult<StudentDTO>> CreateStudentAsync(CreateStudentDTO studentDTO){
             Student student = new(){
                 Id = Guid.NewGuid(),
                 FirstName = studentDTO.FirstName,
                 LastName = studentDTO.LastName,
-                CNP = studentDTO.CNP
+                CNP = studentDTO.CNP,
+                Grades = Array.Empty<Guid>(),
+                Absences = Array.Empty<Guid>()
             };
 
             await repository.CreateStudentAsync(student);
@@ -52,6 +59,7 @@ namespace TalesOfAForthGrade.Controllers
             return CreatedAtAction(nameof(GetStudentAsync), new {id = student.Id}, student.AsDto());
         }
 
+        [Authorize(Roles = "Professor")]
         [HttpPut("{id}")]
         public async Task<ActionResult> UpdateStudentAsync(Guid id, UpdateStudentDTO studentDTO){
             var existingItem = await repository.GetStudentAsync(id);
@@ -70,5 +78,6 @@ namespace TalesOfAForthGrade.Controllers
 
             return NoContent();
         }
+
     }
 }
