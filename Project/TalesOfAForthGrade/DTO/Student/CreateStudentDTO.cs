@@ -2,9 +2,9 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace TalesOfAForthGrade.DTO
+namespace TalesOfAForthGrade.DTO.Student
 {
-    public record UpdateStudentDTO
+    public record CreateStudentDTO
     {
         [Required]
         [RegularExpression(@"[A-Z][a-z]{2,40}")]

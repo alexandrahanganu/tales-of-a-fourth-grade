@@ -39,3 +39,11 @@ D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\bin\Debug\net5.0\runt
 D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
 D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
 D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
+D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\bin\Debug\net5.0\appsettings-example.json
+D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
