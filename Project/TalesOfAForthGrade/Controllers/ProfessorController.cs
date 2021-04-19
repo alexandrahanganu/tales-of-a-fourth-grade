@@ -24,7 +24,7 @@ namespace TalesOfAForthGrade.Controllers
             this.subjectsRepository = subjectsRepository;
         }
 
-        [HttpGet]
+        [HttpGet("{id}")]
         public async Task<ActionResult<ProfessorDTO>> GetProfessor(Guid id){
             return (await professorRepository.GetProfessorAsync(id)).AsDto();
         }
