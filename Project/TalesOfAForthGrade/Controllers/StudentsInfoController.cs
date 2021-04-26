@@ -1,4 +1,3 @@
-using System.Runtime.CompilerServices;
 using System.Linq;
 using System;
 using System.Collections.Generic;
@@ -9,7 +8,6 @@ using TalesOfAForthGrade.DTO.Student;
 using TalesOfAForthGrade.Entities;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
-using MongoDB.Driver;
 
 namespace TalesOfAForthGrade.Controllers
 {

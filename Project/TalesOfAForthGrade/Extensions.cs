@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TalesOfAForthGrade.DTO.Grade;
 using TalesOfAForthGrade.DTO.Professor;
 using TalesOfAForthGrade.DTO.Student;
@@ -11,6 +12,17 @@ namespace TalesOfAForthGrade
                 Id = student.Id,
                 FirstName = student.FirstName,
                 LastName = student.LastName,
+            };
+        }
+
+        public static StudentProfileDTO AsProfileDto(this Student student, List<GradeDataDTO> grades){
+            return new StudentProfileDTO{
+                Id = student.Id,
+                FirstName = student.FirstName,
+                LastName = student.LastName,
+                Grades = grades,
+                Absences = new List<GradeDataDTO>(),
+                Assignments = new List<GradeDataDTO>()
             };
         }
 

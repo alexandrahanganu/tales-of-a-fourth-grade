@@ -1,4 +1,3 @@
-using System.Runtime.CompilerServices;
 using System.Linq;
 using System;
 using System.Collections.Generic;
@@ -43,19 +42,12 @@ namespace TalesOfAForthGrade.Controllers
             return grades;
         }
 
-        // [Authorize(Roles = "Professor")]
-        // [HttpGet("{id}")]
-        // public async Task<GradeDTO> GetGradeAsync(Guid id){
-        //     Grade grade = await gradesRepository.GetGradeAsync(id);
-
-        //     return grade.AsDto();
-        // }
 
         [Authorize(Roles = "Professor")]
         [HttpPost]
         public async Task<ActionResult<StudentDTO>> AddGrade(CreateGradeDTO createGradeDTO){
 
-            Professor professor = await professorsRepository.GetProfessorAsync(Guid.Parse(User.Claims.Where(a => a.Type == "id").FirstOrDefault().Value));
+            Professor professor = await professorsRepository.GetProfessorAsync(Guid.Parse(User.Claims.FirstOrDefault(a => a.Type == "id").Value));
             Student existingStudent = await studentsRepository.GetStudentAsync(createGradeDTO.Student);
 
             if(existingStudent == null){
@@ -67,12 +59,6 @@ namespace TalesOfAForthGrade.Controllers
             }
 
             List<Guid> existingGrades = new List<Guid>(existingStudent.Grades);
-
-            // List<Guid> existingGrades = new List<Guid>();
-
-            // if(existingStudent.Grades.Length > 0){
-            //     existingGrades.AddRange(existingStudent.Grades);
-            // }
 
             Grade grade = new(){
                 Id = Guid.NewGuid(),

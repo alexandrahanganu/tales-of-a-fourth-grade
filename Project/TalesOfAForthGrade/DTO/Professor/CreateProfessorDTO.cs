@@ -1,6 +1,3 @@
-using System;
-using MongoDB.Driver;
-
 namespace TalesOfAForthGrade.DTO.Professor
 {
     public record CreateProfessorDTO{

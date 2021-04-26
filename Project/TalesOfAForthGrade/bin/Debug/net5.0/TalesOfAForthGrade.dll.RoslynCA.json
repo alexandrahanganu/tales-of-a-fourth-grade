@@ -5,9 +5,9 @@
     {
       "tool": {
         "name": "Microsoft (R) Visual C# Compiler",
-        "version": "3.8.0.0",
-        "fileVersion": "3.8.0-5.20604.10 (9ed4b774)",
-        "semanticVersion": "3.8.0",
+        "version": "3.10.0.0",
+        "fileVersion": "3.10.0-3.21201.20 (ee26791a)",
+        "semanticVersion": "3.10.0",
         "language": "en-US"
       },
       "results": [
@@ -20,9 +20,9 @@
               "resultFile": {
                 "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/AuthenticateController.cs",
                 "region": {
-                  "startLine": 44,
+                  "startLine": 40,
                   "startColumn": 15,
-                  "endLine": 44,
+                  "endLine": 40,
                   "endColumn": 19
                 }
               }
@@ -41,52 +41,10 @@
               "resultFile": {
                 "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/AuthenticateController.cs",
                 "region": {
-                  "startLine": 76,
+                  "startLine": 72,
                   "startColumn": 15,
-                  "endLine": 76,
+                  "endLine": 72,
                   "endColumn": 19
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S125",
-          "level": "warning",
-          "message": "Remove this commented out code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentsGradesController.cs",
-                "region": {
-                  "startLine": 48,
-                  "startColumn": 9,
-                  "endLine": 48,
-                  "endColumn": 63
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S125",
-          "level": "warning",
-          "message": "Remove this commented out code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentsGradesController.cs",
-                "region": {
-                  "startLine": 71,
-                  "startColumn": 13,
-                  "endLine": 71,
-                  "endColumn": 61
                 }
               }
             }
@@ -104,31 +62,10 @@
               "resultFile": {
                 "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentsGradesController.cs",
                 "region": {
-                  "startLine": 113,
+                  "startLine": 99,
                   "startColumn": 15,
-                  "endLine": 113,
+                  "endLine": 99,
                   "endColumn": 19
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1118",
-          "level": "warning",
-          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Helpers/JwtHelper.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 18,
-                  "endLine": 10,
-                  "endColumn": 27
                 }
               }
             }
@@ -159,18 +96,18 @@
           }
         },
         {
-          "ruleId": "S927",
+          "ruleId": "S1118",
           "level": "warning",
-          "message": "Rename parameter 'absense' to 'absence' to match the interface declaration.",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Repositories/MongoDbAbsensesRepository.cs",
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Helpers/JwtHelper.cs",
                 "region": {
-                  "startLine": 23,
-                  "startColumn": 54,
-                  "endLine": 23,
-                  "endColumn": 61
+                  "startLine": 10,
+                  "startColumn": 18,
+                  "endLine": 10,
+                  "endColumn": 27
                 }
               }
             }
@@ -188,9 +125,9 @@
               "resultFile": {
                 "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentsInfoController.cs",
                 "region": {
-                  "startLine": 72,
+                  "startLine": 70,
                   "startColumn": 27,
-                  "endLine": 72,
+                  "endLine": 70,
                   "endColumn": 28
                 }
               }
@@ -209,9 +146,9 @@
               "resultFile": {
                 "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentsInfoController.cs",
                 "region": {
-                  "startLine": 73,
+                  "startLine": 71,
                   "startColumn": 26,
-                  "endLine": 73,
+                  "endLine": 71,
                   "endColumn": 27
                 }
               }
@@ -230,31 +167,10 @@
               "resultFile": {
                 "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentsInfoController.cs",
                 "region": {
-                  "startLine": 74,
+                  "startLine": 72,
                   "startColumn": 21,
-                  "endLine": 74,
+                  "endLine": 72,
                   "endColumn": 22
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2971",
-          "level": "warning",
-          "message": "Drop 'Where' and move the condition into the 'FirstOrDefault'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentProfileController.cs",
-                "region": {
-                  "startLine": 28,
-                  "startColumn": 34,
-                  "endLine": 28,
-                  "endColumn": 39
                 }
               }
             }
@@ -272,9 +188,9 @@
               "resultFile": {
                 "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentsGradesController.cs",
                 "region": {
-                  "startLine": 116,
+                  "startLine": 102,
                   "startColumn": 20,
-                  "endLine": 116,
+                  "endLine": 102,
                   "endColumn": 21
                 }
               }
@@ -293,9 +209,9 @@
               "resultFile": {
                 "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentsGradesController.cs",
                 "region": {
-                  "startLine": 117,
+                  "startLine": 103,
                   "startColumn": 25,
-                  "endLine": 117,
+                  "endLine": 103,
                   "endColumn": 26
                 }
               }
@@ -314,9 +230,9 @@
               "resultFile": {
                 "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentsGradesController.cs",
                 "region": {
-                  "startLine": 118,
+                  "startLine": 104,
                   "startColumn": 25,
-                  "endLine": 118,
+                  "endLine": 104,
                   "endColumn": 26
                 }
               }
@@ -335,9 +251,9 @@
               "resultFile": {
                 "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentsGradesController.cs",
                 "region": {
-                  "startLine": 119,
+                  "startLine": 105,
                   "startColumn": 23,
-                  "endLine": 119,
+                  "endLine": 105,
                   "endColumn": 24
                 }
               }
@@ -356,9 +272,9 @@
               "resultFile": {
                 "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentsGradesController.cs",
                 "region": {
-                  "startLine": 120,
+                  "startLine": 106,
                   "startColumn": 22,
-                  "endLine": 120,
+                  "endLine": 106,
                   "endColumn": 23
                 }
               }
@@ -369,18 +285,18 @@
           }
         },
         {
-          "ruleId": "S2971",
+          "ruleId": "S927",
           "level": "warning",
-          "message": "Drop 'Where' and move the condition into the 'FirstOrDefault'.",
+          "message": "Rename parameter 'absense' to 'absence' to match the interface declaration.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentsGradesController.cs",
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Repositories/MongoDbAbsensesRepository.cs",
                 "region": {
-                  "startLine": 58,
-                  "startColumn": 103,
-                  "endLine": 58,
-                  "endColumn": 108
+                  "startLine": 23,
+                  "startColumn": 54,
+                  "endLine": 23,
+                  "endColumn": 61
                 }
               }
             }
@@ -433,40 +349,6 @@
           "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1135",
           "properties": {
             "category": "Info Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "SonarWay",
-              "MainSourceScope",
-              "TestSourceScope"
-            ]
-          }
-        },
-        "S125": {
-          "id": "S125",
-          "shortDescription": "Sections of code should not be commented out",
-          "fullDescription": "Programmers should not comment out code as it bloats programs and reduces readability.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-125",
-          "properties": {
-            "category": "Major Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "SonarWay",
-              "MainSourceScope",
-              "TestSourceScope"
-            ]
-          }
-        },
-        "S2971": {
-          "id": "S2971",
-          "shortDescription": "\"IEnumerable\" LINQs should be simplified",
-          "fullDescription": "In the interests of readability, code that can be simplified should be simplified. To that end, there are several ways IEnumerable language integrated queries (LINQ) can be simplified",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2971",
-          "properties": {
-            "category": "Major Code Smell",
             "isEnabledByDefault": true,
             "tags": [
               "C#",

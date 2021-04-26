@@ -1,12 +1,8 @@
-using System.Runtime.CompilerServices;
-using System.Linq;
-using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 
 using TalesOfAForthGrade.Repositories;
 using TalesOfAForthGrade.DTO.Student;
-using TalesOfAForthGrade.Entities;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;

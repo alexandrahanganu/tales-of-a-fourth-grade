@@ -1,6 +1,3 @@
-using System;
-using MongoDB.Driver;
-
 namespace TalesOfAForthGrade.DTO.Grade
 {
     public record UpdateGradeDTO{

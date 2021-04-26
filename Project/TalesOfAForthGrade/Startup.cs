@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.Net.Http.Headers;
 using Microsoft.OpenApi.Models;
 
 using MongoDB.Bson;
@@ -30,6 +31,18 @@ namespace TalesOfAForthGrade
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: "*",
+                                builder =>
+                                {
+                                    builder.WithOrigins("https://localhost:5001",
+                                                        "http://localhost:3333",
+                                                        "*")
+                                            .WithHeaders(HeaderNames.ContentType, HeaderNames.Authorization);
+                                });
+            });
 
             BsonSerializer.RegisterSerializer(new GuidSerializer(BsonType.String));
 
@@ -84,6 +97,7 @@ namespace TalesOfAForthGrade
 
             app.UseAuthentication();
             app.UseRouting();
+            app.UseCors("*");
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

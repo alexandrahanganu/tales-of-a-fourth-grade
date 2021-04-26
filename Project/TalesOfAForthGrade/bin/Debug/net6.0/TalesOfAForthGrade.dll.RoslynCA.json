@@ -1,0 +1,435 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "3.10.0.0",
+        "fileVersion": "3.10.0-3.21201.20 (ee26791a)",
+        "semanticVersion": "3.10.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "S1135",
+          "level": "warning",
+          "message": "Complete the task associated to this 'TODO' comment.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/AuthenticateController.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 15,
+                  "endLine": 40,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1135",
+          "level": "warning",
+          "message": "Complete the task associated to this 'TODO' comment.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/AuthenticateController.cs",
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 15,
+                  "endLine": 72,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1135",
+          "level": "warning",
+          "message": "Complete the task associated to this 'TODO' comment.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentsGradesController.cs",
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 15,
+                  "endLine": 99,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Helpers/JwtHelper.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 18,
+                  "endLine": 10,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Program.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 18,
+                  "endLine": 12,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4136",
+          "level": "warning",
+          "message": "All 'AsDto' method overloads should be adjacent.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Extensions.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 34,
+                  "endLine": 10,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Extensions.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 32,
+                  "endLine": 29,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "Non-adjacent overload"
+            }
+          }
+        },
+        {
+          "ruleId": "S1121",
+          "level": "warning",
+          "message": "Extract the assignment of 'FirstName' from this expression.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentsInfoController.cs",
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 27,
+                  "endLine": 70,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1121",
+          "level": "warning",
+          "message": "Extract the assignment of 'LastName' from this expression.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentsInfoController.cs",
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 26,
+                  "endLine": 71,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1121",
+          "level": "warning",
+          "message": "Extract the assignment of 'CNP' from this expression.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentsInfoController.cs",
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 21,
+                  "endLine": 72,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1121",
+          "level": "warning",
+          "message": "Extract the assignment of 'Id' from this expression.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentsGradesController.cs",
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 20,
+                  "endLine": 102,
+                  "endColumn": 21
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1121",
+          "level": "warning",
+          "message": "Extract the assignment of 'Student' from this expression.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentsGradesController.cs",
+                "region": {
+                  "startLine": 103,
+                  "startColumn": 25,
+                  "endLine": 103,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1121",
+          "level": "warning",
+          "message": "Extract the assignment of 'Subject' from this expression.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentsGradesController.cs",
+                "region": {
+                  "startLine": 104,
+                  "startColumn": 25,
+                  "endLine": 104,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1121",
+          "level": "warning",
+          "message": "Extract the assignment of 'Value' from this expression.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentsGradesController.cs",
+                "region": {
+                  "startLine": 105,
+                  "startColumn": 23,
+                  "endLine": 105,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1121",
+          "level": "warning",
+          "message": "Extract the assignment of 'Date' from this expression.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentsGradesController.cs",
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 22,
+                  "endLine": 106,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'absense' to 'absence' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Repositories/MongoDbAbsensesRepository.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 54,
+                  "endLine": 23,
+                  "endColumn": 61
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "S1118": {
+          "id": "S1118",
+          "shortDescription": "Utility classes should not have public constructors",
+          "fullDescription": "Utility classes, which are collections of static members, are not meant to be instantiated.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1118",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S1121": {
+          "id": "S1121",
+          "shortDescription": "Assignments should not be made from within sub-expressions",
+          "fullDescription": "Assignments within sub-expressions are hard to spot and therefore make the code less readable. Ideally, sub-expressions should not have side-effects.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1121",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S1135": {
+          "id": "S1135",
+          "shortDescription": "Track uses of \"TODO\" tags",
+          "fullDescription": "TODO tags are commonly used to mark places where some more code is required, but which the developer wants to implement later.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1135",
+          "properties": {
+            "category": "Info Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S4136": {
+          "id": "S4136",
+          "shortDescription": "Method overloads should be grouped together",
+          "fullDescription": "For clarity, all overloads of the same method should be grouped together. That lets both users and maintainers quickly understand all the current available options.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4136",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S927": {
+          "id": "S927",
+          "shortDescription": "Parameter names should match base declaration and other partial definitions",
+          "fullDescription": "The name of a parameter in an externally visible. This rule raises an issue when method override does not match the name of the parameter in the base declaration of the method, or the name of the parameter in the interface declaration of the method or the name of any other partial definition.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-927",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
