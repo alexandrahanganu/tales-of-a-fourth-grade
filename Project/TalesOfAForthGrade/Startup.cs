@@ -54,6 +54,7 @@ namespace TalesOfAForthGrade
             services.AddSingleton<IProfessorRepository, MongoDbProfessorRepository>();
             services.AddSingleton<IGradesRepository, MongoDbGradesRepository>();
             services.AddSingleton<ISubjectsRepository, MongoDbSubjectRepository>();
+            services.AddSingleton<IAbsensesRepository, MongoDbAbsensesRepository>();
 
             services.AddControllers(options => {
                 options.SuppressAsyncSuffixInActionNames = false;

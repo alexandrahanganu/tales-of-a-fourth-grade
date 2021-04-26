@@ -41,9 +41,10 @@ function appendData(data){
 
     data.absences.forEach(absence => {
         if(subjects.includes(absence.subject)){
-
+            addAbsence(absence);
         }else{
             createNewSubject(absence, !firstSubject);
+            addAbsence(absence);
             firstSubject = false;
             subjects.push(absence.subject)
         }
@@ -62,13 +63,25 @@ function appendData(data){
 }
 
 function addGrade(grade){
-    let [month, date, year]    = new Date(grade.date).toLocaleDateString("en-US").split("/")
+    let [month, date, year] = new Date(grade.date).toLocaleDateString("en-US").split("/")
 
 
     $(`#${grade.subject}-grades`).append(`
         <tr>
             <td>${date}/${month}/${year}</td>
             <td>${grade.value}</td>
+        </tr>
+    `);
+}
+
+function addAbsence(absence){
+    let [month, date, year] = new Date(absence.date).toLocaleDateString("en-US").split("/")
+
+    $(`#${absence.subject}-tardies`).append(`
+        <tr>
+            <td>${date}/${month}/${year}</td>
+            <td>${absence.excused ? '&#10004;' : '&#x2718;'}</td>
+            <td>${absence.motivation}</td>
         </tr>
     `);
 }

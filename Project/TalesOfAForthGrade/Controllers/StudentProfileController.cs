@@ -10,6 +10,7 @@ using MongoDB.Driver;
 using TalesOfAForthGrade.Entities;
 using System.Collections.Generic;
 using TalesOfAForthGrade.DTO.Grade;
+using TalesOfAForthGrade.DTO.Absence;
 
 namespace TalesOfAForthGrade.Controllers
 {
@@ -22,10 +23,17 @@ namespace TalesOfAForthGrade.Controllers
 
         private readonly ISubjectsRepository subjectsRepository;
 
-        public StudentProfileController(IStudentsRepository repository, IGradesRepository gradesRepository, ISubjectsRepository subjectsRepository){
+        private readonly IAbsensesRepository absensesRepository;
+
+        public StudentProfileController(IStudentsRepository repository, 
+        IGradesRepository gradesRepository, 
+        ISubjectsRepository subjectsRepository, 
+        IAbsensesRepository absensesRepository){
+
             this.repository = repository;
             this.gradesRepository = gradesRepository;
             this.subjectsRepository = subjectsRepository;
+            this.absensesRepository = absensesRepository;
         }
 
         [Authorize(Roles = "Student")]
@@ -54,7 +62,21 @@ namespace TalesOfAForthGrade.Controllers
                 });
             }
 
-            return student.AsProfileDto(gradesDto);
+            var absences = await absensesRepository.GetAbsencesStudentAsync(student.Id);
+
+             List<AbsenceDataDTO> absenceDatas = new List<AbsenceDataDTO>();
+
+            foreach(Absence absence in absences){
+                absenceDatas.Add(new AbsenceDataDTO{
+                    Id = absence.Id,
+                    Subject = (await subjectsRepository.GetSubjectAsync(absence.Subject)).Title,
+                    excused = absence.excused,
+                    motivation = absence.motivation,
+                    Date = absence.Date
+                });
+            }
+
+            return student.AsProfileDto(gradesDto, absenceDatas);
         }
     }
 }

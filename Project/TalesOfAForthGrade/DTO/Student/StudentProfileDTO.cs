@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using TalesOfAForthGrade.DTO.Absence;
 using TalesOfAForthGrade.DTO.Grade;
 
 namespace TalesOfAForthGrade.DTO.Student
@@ -10,7 +11,7 @@ namespace TalesOfAForthGrade.DTO.Student
         public string LastName { get; init; }
         public string FirstName { get; init; }
         public List<GradeDataDTO> Grades { get; init; }
-        public List<GradeDataDTO> Absences { get; init; }
+        public List<AbsenceDataDTO> Absences { get; init; }
         public List<GradeDataDTO> Assignments { get; init; }
     }
 }

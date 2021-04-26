@@ -8,6 +8,7 @@ namespace TalesOfAForthGrade.Repositories
     public interface IAbsensesRepository
     {
 
+        Task<Absence> GetAbsence(Guid absenceId);
         Task<IEnumerable<Absence>> GetAbsencesStudentAsync(Guid studentId);
 
         Task CreateAbsenceAsync(Absence absence);

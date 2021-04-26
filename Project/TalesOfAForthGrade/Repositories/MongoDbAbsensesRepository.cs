@@ -11,7 +11,7 @@ namespace TalesOfAForthGrade.Repositories
     {
 
         private const string databaseName = "ToaFG";
-        private const string collectionName = "absenses";
+        private const string collectionName = "abseces";
         private readonly IMongoCollection<Absence> absensesCollection;
         private readonly FilterDefinitionBuilder<Absence> filterBuilder = Builders<Absence>.Filter;
 
@@ -20,9 +20,15 @@ namespace TalesOfAForthGrade.Repositories
             absensesCollection = database.GetCollection<Absence>(collectionName);
         }
 
-        public async Task CreateAbsenceAsync(Absence absense)
+        public async Task CreateAbsenceAsync(Absence absence)
         {
-            await absensesCollection.InsertOneAsync(absense);
+            await absensesCollection.InsertOneAsync(absence);
+        }
+
+        public async Task<Absence> GetAbsence(Guid absenceId)
+        {
+            var filter = filterBuilder.Eq(absence => absence.Id, absenceId);
+            return await absensesCollection.Find(filter).SingleOrDefaultAsync();
         }
 
         public async Task<IEnumerable<Absence>> GetAbsencesStudentAsync(Guid studentId)
