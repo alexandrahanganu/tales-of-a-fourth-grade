@@ -13,6 +13,7 @@ namespace TalesOfAForthGrade
                 Id = student.Id,
                 FirstName = student.FirstName,
                 LastName = student.LastName,
+                CNP = student.CNP
             };
         }
 
@@ -43,6 +44,16 @@ namespace TalesOfAForthGrade
                 LastName = professor.LastName,
                 FirstName = professor.FirstName,
                 Subject = professor.Subject
+            };
+        }
+
+        public static ProfessorDataDTO AsDataDto(this Professor professor, string subject){
+            return new ProfessorDataDTO{
+                Id = professor.Id,
+                LastName = professor.LastName,
+                FirstName = professor.FirstName,
+                Subject = subject,
+                username = professor.username
             };
         }
 

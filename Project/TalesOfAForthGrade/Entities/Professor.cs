@@ -8,5 +8,7 @@ namespace TalesOfAForthGrade.Entities
         public string FirstName { get; init; }
         public string username {get; init; }
         public Guid Subject { get; init; }
+
+        public string Password {get; init;}
     }
 }

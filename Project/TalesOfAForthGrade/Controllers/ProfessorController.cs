@@ -2,10 +2,13 @@ using System;
 using Microsoft.AspNetCore.Mvc;
 
 using TalesOfAForthGrade.Repositories;
-using TalesOfAForthGrade.DTO.Student;
 using TalesOfAForthGrade.Entities;
 using System.Threading.Tasks;
 using TalesOfAForthGrade.DTO.Professor;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Authorization;
+using TalesOfAForthGrade.Helper;
+using System.Linq;
 
 namespace TalesOfAForthGrade.Controllers
 {
@@ -20,14 +23,30 @@ namespace TalesOfAForthGrade.Controllers
             this.subjectsRepository = subjectsRepository;
         }
 
+        [Authorize(Roles = "Admin")]
+        [HttpGet]
+        public async Task<IEnumerable<ProfessorDataDTO>> GetProfessors(){
+            List<ProfessorDataDTO> professorDataDTOs = new List<ProfessorDataDTO>();
+
+            var profs = (await professorRepository.GetProfessorsAsync());
+
+            foreach (Professor prof in profs)
+            {
+                Subject subject = await subjectsRepository.GetSubjectAsync(prof.Subject);
+                professorDataDTOs.Add(prof.AsDataDto(subject.Title));
+            }
+
+            return professorDataDTOs;
+        }
+
         [HttpGet("{id}")]
         public async Task<ActionResult<ProfessorDTO>> GetProfessor(Guid id){
             return (await professorRepository.GetProfessorAsync(id)).AsDto();
         }
 
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         [HttpPost]
-        public async Task<ActionResult<StudentDTO>> CreateProfessor(CreateProfessorDTO professorDTO){
+        public async Task<ActionResult<ProfessorDTO>> CreateProfessor(CreateProfessorDTO professorDTO){
             Subject subject = await subjectsRepository.GetSubjectAsync(professorDTO.Subject);
 
             if(subject == null){
@@ -50,6 +69,99 @@ namespace TalesOfAForthGrade.Controllers
             await professorRepository.CreateProfessorAsync(professor);
 
             return CreatedAtAction(nameof(GetProfessor),  new {id = professor.Id}, professor.AsDto());
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpPost]
+        [Route("list")]
+        public async Task<IEnumerable<NewlyCreatedProfessorDTO>> CreateProfessors(List<CreateProfessorDTO> professorsDTO){
+            List<NewlyCreatedProfessorDTO> newlyCreatedProfessorDTOs = new List<NewlyCreatedProfessorDTO>();
+            
+            foreach(CreateProfessorDTO professorDTO in professorsDTO){
+                Subject subject = await subjectsRepository.GetSubjectAsync(professorDTO.Subject);
+
+                if(subject == null){
+                    subject = new Subject(){
+                        Id = Guid.NewGuid(),
+                        Title = professorDTO.Subject
+                    };
+
+                    await subjectsRepository.CreateSubjectAsync(subject);
+                }
+
+                Guid id = Guid.NewGuid();
+                string password = RandomHelper.GenerateRandomString(12);
+                string hashedPassword = CryptoHelper.hashPassword(password);
+
+                newlyCreatedProfessorDTOs.Add(new(){
+                    Id = id,
+                    LastName = professorDTO.LastName,
+                    FirstName = professorDTO.FirstName,
+                    username = professorDTO.FirstName.ToLower() + "." + professorDTO.LastName.ToLower(),
+                    Subject = subject.Title,
+                    Password = password
+                });
+
+                Professor professor = new Professor(){
+                    Id = id,
+                    LastName = professorDTO.LastName,
+                    FirstName = professorDTO.FirstName,
+                    username = professorDTO.FirstName.ToLower() + "." + professorDTO.LastName.ToLower(),
+                    Subject = subject.Id,
+                    Password = hashedPassword
+                };
+
+                await professorRepository.CreateProfessorAsync(professor);
+            }
+
+            return newlyCreatedProfessorDTOs;
+        }
+
+
+        [Authorize(Roles = "Admin")]
+        [HttpPut("{id}")]
+        public async Task<ActionResult> UpdateProfessorAsync(Guid id, UpdateProfessorDTO professorDTO){
+            var existingItem = await professorRepository.GetProfessorAsync(id);
+
+            if(existingItem is null){
+                return NotFound();
+            }
+
+            Subject subject = await subjectsRepository.GetSubjectAsync(professorDTO.Subject);
+
+            if(subject == null){
+                subject = new Subject(){
+                    Id = Guid.NewGuid(),
+                    Title = professorDTO.Subject
+                };
+
+                await subjectsRepository.CreateSubjectAsync(subject);
+            }
+
+            Professor updatedProffesor = existingItem with {
+                FirstName = professorDTO.FirstName,
+                LastName = professorDTO.LastName,
+                username = professorDTO.FirstName.ToLower() + "." + professorDTO.LastName.ToLower(),
+                Subject = subject.Id,
+            };
+
+            await professorRepository.UpdateProfessorAsync(updatedProffesor);
+
+            return NoContent();
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> DeleteProfessor(Guid id){
+            var existingItem = await professorRepository.GetProfessorAsync(id);
+
+            if(existingItem is null){
+                return NotFound();
+            }
+
+            professorRepository.DeleteProfessorAsync(existingItem.Id);
+
+            return NoContent();
         }
     }
 }

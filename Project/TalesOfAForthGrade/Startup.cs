@@ -40,7 +40,8 @@ namespace TalesOfAForthGrade
                                     builder.WithOrigins("https://localhost:5001",
                                                         "http://localhost:3333",
                                                         "*")
-                                            .WithHeaders(HeaderNames.ContentType, HeaderNames.Authorization);
+                                            .WithHeaders(HeaderNames.ContentType, HeaderNames.Authorization)
+                                            .WithMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
                                 });
             });
 

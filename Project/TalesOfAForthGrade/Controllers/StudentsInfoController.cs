@@ -8,6 +8,8 @@ using TalesOfAForthGrade.DTO.Student;
 using TalesOfAForthGrade.Entities;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using TalesOfAForthGrade.Helper;
+using System.Security.Cryptography;
 
 namespace TalesOfAForthGrade.Controllers
 {
@@ -20,7 +22,7 @@ namespace TalesOfAForthGrade.Controllers
             this.repository = repository;
         }
 
-        [Authorize(Roles = "Professor")]
+        [Authorize(Roles = "Professor,Admin")]
         [HttpGet]
         public async Task<IEnumerable<StudentDTO>> GetStudentsAsync(){
             var students = (await repository.GetStudentsAsync())
@@ -28,7 +30,7 @@ namespace TalesOfAForthGrade.Controllers
             return students;
         }
 
-        [Authorize(Roles = "Professor")]
+        [Authorize(Roles = "Professor,Admin")]
         [HttpGet("{id}")]
         public async Task<ActionResult<StudentDTO>> GetStudentAsync(Guid id){
             var student = await repository.GetStudentAsync(id);
@@ -57,7 +59,41 @@ namespace TalesOfAForthGrade.Controllers
             return CreatedAtAction(nameof(GetStudentAsync), new {id = student.Id}, student.AsDto());
         }
 
-        [Authorize(Roles = "Professor")]
+        //[Authorize(Roles = "Admin")]
+        [HttpPost ]
+        [Route("list")]
+        public async Task<IEnumerable<NewlyCreatedStudentDTO>> CreateStudentsAsync(List<CreateStudentDTO> studentsDTO){
+            List<NewlyCreatedStudentDTO> newlyCreatedStudentDTOs = new List<NewlyCreatedStudentDTO>();
+            foreach(CreateStudentDTO studentDTO in studentsDTO){
+
+                string password = RandomHelper.GenerateRandomString(12);
+                Guid id = Guid.NewGuid();
+
+                newlyCreatedStudentDTOs.Add(new(){
+                    Id = id,
+                    FirstName = studentDTO.FirstName,
+                    LastName = studentDTO.LastName,
+                    CNP = studentDTO.CNP,
+                    password = password
+                });
+
+                Student student = new(){
+                    Id = id,
+                    FirstName = studentDTO.FirstName,
+                    LastName = studentDTO.LastName,
+                    CNP = studentDTO.CNP,
+                    Password = CryptoHelper.hashPassword(password),
+                    Grades = Array.Empty<Guid>(),
+                    Absences = Array.Empty<Guid>()
+                };
+
+                await repository.CreateStudentAsync(student);
+            }
+
+            return newlyCreatedStudentDTOs;
+        }
+
+        [Authorize(Roles = "Professor,Admin")]
         [HttpPut("{id}")]
         public async Task<ActionResult> UpdateStudentAsync(Guid id, UpdateStudentDTO studentDTO){
             var existingItem = await repository.GetStudentAsync(id);
@@ -73,6 +109,20 @@ namespace TalesOfAForthGrade.Controllers
             };
 
             await repository.UpdateStudentAsync(updatedStudent);
+
+            return NoContent();
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> DeleteStudent(Guid id){
+            var existingItem = await repository.GetStudentAsync(id);
+
+            if(existingItem is null){
+                return NotFound();
+            }
+
+            repository.DeleteStudentAsync(existingItem.Id);
 
             return NoContent();
         }

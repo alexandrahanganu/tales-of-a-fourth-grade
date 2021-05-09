@@ -1,7 +1,7 @@
 var choiseStudent = true;
 
 if(localStorage.getItem("token") != null){
-    //window.location.href = "/profile"; // To be added after testing
+    window.location.href = "/profile"; // To be added after testing
 }
 
 $("#change-student").click(function(){

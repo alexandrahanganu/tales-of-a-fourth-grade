@@ -15,5 +15,7 @@ namespace TalesOfAForthGrade.Repositories
         Task CreateStudentAsync(Student student);
 
         Task UpdateStudentAsync(Student student);
+
+        void DeleteStudentAsync(Guid id);
     }
 }

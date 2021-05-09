@@ -7,6 +7,7 @@ namespace TalesOfAForthGrade.Repositories
 {
     public interface IProfessorRepository
     {
+        Task<IEnumerable<Professor>> GetProfessorsAsync();
         Task<Professor> GetProfessorAsync(Guid id);
 
         Task<Professor> GetProfessorAsync(string name);
@@ -14,5 +15,7 @@ namespace TalesOfAForthGrade.Repositories
         Task CreateProfessorAsync(Professor professor);
 
         Task UpdateProfessorAsync(Professor professor);
+
+        void DeleteProfessorAsync(Guid id);
     }
 }

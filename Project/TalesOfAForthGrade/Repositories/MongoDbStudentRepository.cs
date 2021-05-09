@@ -25,6 +25,12 @@ namespace TalesOfAForthGrade.Repositories
             await studentsCollection.InsertOneAsync(student);
         }
 
+        public async void DeleteStudentAsync(Guid id)
+        {
+            var filter = filterBuilder.Eq(student => student.Id, id);
+            await studentsCollection.DeleteOneAsync(filter);
+        }
+
         public async Task<Student> GetStudentAsync(String cnp){
             var filter = filterBuilder.Eq(student => student.CNP, cnp);
             return await studentsCollection.Find(filter).SingleOrDefaultAsync();

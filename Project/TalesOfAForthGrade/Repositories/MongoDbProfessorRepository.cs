@@ -26,6 +26,12 @@ namespace TalesOfAForthGrade.Repositories
             await professorsCollection.InsertOneAsync(professor);
         }
 
+        public async void DeleteProfessorAsync(Guid id)
+        {
+            var filter = filterBuilder.Eq(prof => prof.Id, id);
+            await professorsCollection.DeleteOneAsync(filter);
+        }
+
         public async Task<Professor> GetProfessorAsync(string name){
             var filter = filterBuilder.Eq(prof => prof.username, name);
             return await professorsCollection.Find(filter).SingleOrDefaultAsync();
@@ -37,6 +43,10 @@ namespace TalesOfAForthGrade.Repositories
             return await professorsCollection.Find(filter).SingleOrDefaultAsync();
         }
 
+        public async Task<IEnumerable<Professor>> GetProfessorsAsync()
+        {
+            return await professorsCollection.Find(new BsonDocument()).ToListAsync();
+        }
 
         public async Task UpdateProfessorAsync(Professor professor)
         {

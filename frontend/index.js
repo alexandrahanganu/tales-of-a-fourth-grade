@@ -17,6 +17,14 @@ app.get('/login', (req, res) => {
     res.sendFile('./static/Login.html', { root: __dirname });
 });
 
+app.get("/adminpage", (req, res) => {
+    res.sendFile('./static/AdminPage.html', { root: __dirname });
+});
+
+app.get("/admin", (req, res) => {
+    res.sendFile('./static/LoginAdmin.html', { root: __dirname });
+})
+
 
 
 

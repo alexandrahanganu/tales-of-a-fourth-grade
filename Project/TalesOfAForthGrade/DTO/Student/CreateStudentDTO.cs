@@ -18,5 +18,6 @@ namespace TalesOfAForthGrade.DTO.Student
         //[RegularExpression(@"[1-9][0-9]{2}(([0][0-1]|[1][0-2])([0-2][0-9]|[3][0-2])|([0][3-9]|[1][0-2])([0-2][0-9]|[3][0-2])|([0][2]|[1][0-2])([0-2][0-9]))[0-9]{6}")] // <- just for flexing
         [RegularExpression(@"[0-9]{13}")]
         public string CNP { get; init; }
+
     }
 }
