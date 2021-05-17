@@ -19,7 +19,7 @@ $(document).ready(function(){
             $("#subject-name").attr("subject-name", data.subject)
         },
         error: function (XMLHttpRequest, textStatus, errorThrown){
-            localStorage.setItem("token", "")
+            localStorage.removeItem("prof_token");
             window.location.href = "/login";
         }
     });
@@ -33,11 +33,10 @@ $(document).ready(function(){
         },
         success: function (data) {
             $("#student-name").text(data.lastName + " " + data.firstName);
-            console.log(data);
             appendData(data)
         },
         error: function (XMLHttpRequest, textStatus, errorThrown){
-            localStorage.setItem("token", "")
+            localStorage.removeItem("prof_token");
             window.location.href = "/login";
         }
     })
@@ -102,7 +101,7 @@ function appendGrades(grades){
                     if(xhr.status == 400){
                         alert("Something went wrong")
                     }else{
-                        localStorage.removeItem("token-admin");
+                        localStorage.removeItem("prof_token");
                         window.location.href = "/login";
                     }
                 }
@@ -151,7 +150,7 @@ function appendAssignments(assignments){
                             alert("Something went wrong")
                         }else{
                             console.log(xhr)
-                            localStorage.removeItem("token-admin");
+                            localStorage.removeItem("prof_token");
                             window.location.href = "/login";
                         }
                     }
@@ -194,7 +193,7 @@ function appendAssignments(assignments){
                     alert("Something went wrong")
                 }else{
                     console.log(xhr)
-                    localStorage.removeItem("token-admin");
+                    localStorage.removeItem("prof_token");
                     window.location.href = "/login";
                 }
             }
@@ -211,17 +210,17 @@ function appendTardines(tardines){
                 `
                 <tr>
                     <td>${date}/${month}/${year}</td>
-                    <td><input class="checkbox" type="checkbox" id="${absence.id}-assignment-done" name="${absence.id}-assignment-done" ${absence.excused ? "checked":""}></td>
-                    <td id=${absence.id}-assignment-motivation>${absence.motivation}</td>
+                    <td><input class="checkbox" type="checkbox" id="${absence.id}-absence-motivated" name="${absence.id}-absence-motivated" ${absence.excused ? "checked":""}></td>
+                    <td><input type="text" id="${absence.id}-absence-motivation" value="${absence.motivation}"></td>
                     <td></td> 
                 </tr>
                 `
             );
             
-            $(`#${absence.id}-assignment-done`).change(function() {
+            $(`#${absence.id}-absence-motivated`).change(function() {
                 absence_modified = {
                     excused: this.checked,
-                    motivation: $(`#${absence.id}-assignment-motivation`).text()
+                    motivation: $(`#${absence.id}-absence-motivation`).val()
                 }
 
                 $.ajax
@@ -241,12 +240,45 @@ function appendTardines(tardines){
                             alert("Something went wrong")
                         }else{
                             console.log(xhr)
-                            localStorage.removeItem("token-admin");
+                            localStorage.removeItem("prof_token");
                             window.location.href = "/login";
                         }
                     }
                 })
             });
+
+            $(`#${absence.id}-absence-motivation`).focusout(function(){
+                absence_modified = {
+                    excused: $(`#${absence.id}-absence-motivated`).prop('checked'),
+                    motivation: $(`#${absence.id}-absence-motivation`).val()
+                }
+
+                $.ajax
+                ({
+                    type: "PUT",
+                    url: `https://localhost:5001/students/absences/${absence.id}`,
+                    contentType: 'application/json',
+                    data: JSON.stringify(absence_modified),
+                    beforeSend: function (xhr) {
+                        xhr.setRequestHeader('Authorization', `Bearer ${localStorage.getItem("prof_token")}`);
+                    },
+                    success: function (data) {
+                        location.reload();
+                    },
+                    error: function (xhr, textStatus, errorThrown){
+                        if(xhr.status == 400){
+                            alert("Something went wrong")
+                        }else{
+                            console.log(xhr)
+                            localStorage.removeItem("prof_token");
+                            window.location.href = "/login";
+                        }
+                    }
+                })
+
+            })
+
+            
 
         }
     });
@@ -282,7 +314,7 @@ function appendTardines(tardines){
                     alert("Something went wrong")
                 }else{
                     console.log(xhr)
-                    localStorage.removeItem("token-admin");
+                    localStorage.removeItem("prof_token");
                     window.location.href = "/login";
                 }
             }

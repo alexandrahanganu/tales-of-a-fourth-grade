@@ -81,9 +81,8 @@ namespace TalesOfAForthGrade.Controllers
             return Created("/absences", absence);
         }
 
-        [Authorize(Roles = "Professor")]
         [HttpPut("{id}")]
-        public async Task<ActionResult> UpdateStudentGradeAsync(Guid id, UpdateAbsenceDTO updateAbsenceDTO){
+        public async Task<ActionResult> UpdateStudentAbsenceAsync(Guid id, UpdateAbsenceDTO updateAbsenceDTO){
             var existingItem = await absensesRepository.GetAbsence(id);
 
             if(existingItem is null){

@@ -96,6 +96,27 @@
           }
         },
         {
+          "ruleId": "S2245",
+          "level": "warning",
+          "message": "Make sure that using this pseudorandom number generator is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Helpers/RandomHelper.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 40,
+                  "endLine": 9,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "S1118",
           "level": "warning",
           "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
@@ -129,27 +150,6 @@
                   "startColumn": 18,
                   "endLine": 12,
                   "endColumn": 25
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2245",
-          "level": "warning",
-          "message": "Make sure that using this pseudorandom number generator is safe here.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Helpers/RandomHelper.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 40,
-                  "endLine": 9,
-                  "endColumn": 52
                 }
               }
             }
@@ -273,27 +273,6 @@
         {
           "ruleId": "S1121",
           "level": "warning",
-          "message": "Extract the assignment of 'salt' from this expression.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Helpers/CryptoHelper.cs",
-                "region": {
-                  "startLine": 8,
-                  "startColumn": 62,
-                  "endLine": 8,
-                  "endColumn": 63
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1121",
-          "level": "warning",
           "message": "Extract the assignment of 'Id' from this expression.",
           "locations": [
             {
@@ -397,6 +376,27 @@
           }
         },
         {
+          "ruleId": "S1121",
+          "level": "warning",
+          "message": "Extract the assignment of 'salt' from this expression.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Helpers/CryptoHelper.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 62,
+                  "endLine": 8,
+                  "endColumn": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "S2053",
           "level": "warning",
           "message": "Make this salt longer.",
@@ -447,9 +447,9 @@
               "resultFile": {
                 "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentAbsencesCotroller.cs",
                 "region": {
-                  "startLine": 94,
+                  "startLine": 93,
                   "startColumn": 20,
-                  "endLine": 94,
+                  "endLine": 93,
                   "endColumn": 21
                 }
               }
@@ -463,6 +463,27 @@
           "ruleId": "S1121",
           "level": "warning",
           "message": "Extract the assignment of 'Student' from this expression.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentAbsencesCotroller.cs",
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 25,
+                  "endLine": 94,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1121",
+          "level": "warning",
+          "message": "Extract the assignment of 'Subject' from this expression.",
           "locations": [
             {
               "resultFile": {
@@ -483,7 +504,7 @@
         {
           "ruleId": "S1121",
           "level": "warning",
-          "message": "Extract the assignment of 'Subject' from this expression.",
+          "message": "Extract the assignment of 'excused' from this expression.",
           "locations": [
             {
               "resultFile": {
@@ -504,36 +525,15 @@
         {
           "ruleId": "S1121",
           "level": "warning",
-          "message": "Extract the assignment of 'excused' from this expression.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentAbsencesCotroller.cs",
-                "region": {
-                  "startLine": 97,
-                  "startColumn": 25,
-                  "endLine": 97,
-                  "endColumn": 26
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1121",
-          "level": "warning",
           "message": "Extract the assignment of 'motivation' from this expression.",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentAbsencesCotroller.cs",
                 "region": {
-                  "startLine": 98,
+                  "startLine": 97,
                   "startColumn": 28,
-                  "endLine": 98,
+                  "endLine": 97,
                   "endColumn": 29
                 }
               }
@@ -552,9 +552,9 @@
               "resultFile": {
                 "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Controllers/StudentAbsencesCotroller.cs",
                 "region": {
-                  "startLine": 99,
+                  "startLine": 98,
                   "startColumn": 22,
-                  "endLine": 99,
+                  "endLine": 98,
                   "endColumn": 23
                 }
               }
@@ -649,6 +649,27 @@
           }
         },
         {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'assignment' to 'absence' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Repositories/MongoDbAssignmentRepossitory.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 60,
+                  "endLine": 23,
+                  "endColumn": 70
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "S1121",
           "level": "warning",
           "message": "Extract the assignment of 'Done' from this expression.",
@@ -682,27 +703,6 @@
                   "startColumn": 25,
                   "endLine": 96,
                   "endColumn": 26
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S927",
-          "level": "warning",
-          "message": "Rename parameter 'assignment' to 'absence' to match the interface declaration.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/.net/tales-of-a-fourth-grade/Project/TalesOfAForthGrade/Repositories/MongoDbAssignmentRepossitory.cs",
-                "region": {
-                  "startLine": 23,
-                  "startColumn": 60,
-                  "endLine": 23,
-                  "endColumn": 70
                 }
               }
             }

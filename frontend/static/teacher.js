@@ -16,8 +16,8 @@ $(document).ready(function(){
             $("#subject-name").text(data.subject);
         },
         error: function (XMLHttpRequest, textStatus, errorThrown){
-            //localStorage.setItem("token", "")
-            //window.location.href = "/login";
+            localStorage.removeItem("prof_token");
+            window.location.href = "/login";
         }
     })
 
@@ -32,8 +32,8 @@ $(document).ready(function(){
             appendData(data);
         },
         error: function (XMLHttpRequest, textStatus, errorThrown){
-            //localStorage.setItem("token", "")
-            //window.location.href = "/login";
+            localStorage.removeItem("prof_token");
+            window.location.href = "/login";
         }
     })
 });

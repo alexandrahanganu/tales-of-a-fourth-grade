@@ -15,7 +15,7 @@ $(document).ready(function(){
             appendData(data);
         },
         error: function (XMLHttpRequest, textStatus, errorThrown){
-            localStorage.setItem("token", "")
+            localStorage.removeItem("token");
             window.location.href = "/login";
         }
     })
@@ -65,11 +65,12 @@ function appendData(data){
 
 function addAssignment(assignment){
     let [month, date, year] = new Date(assignment.dateDue).toLocaleDateString("en-US").split("/");
-    flag = Date.now().toString() < new Date(assignment.dateDue).toString();
+    var flag = new Date(Date.now()) <= new Date(assignment.dateDue);
+    console.log(flag);
     $(`#${assignment.subject}-assingments`).append(`
     <tr>
         <td>${date}/${month}/${year}</td>
-        <td>${assignment.done ? '&#10004;' : flag ? '<div class="loader"><img src="loading.png" alt="loading"></div>' : '&#x2718;'}</td>
+        <td>${assignment.done ? '&#10004;' : (flag ? '<div class="loader"><img src="loading.png" alt="loading"></div>' : '&#x2718;')}</td>
     </tr>
     `);
 }
@@ -93,9 +94,39 @@ function addAbsence(absence){
         <tr>
             <td>${date}/${month}/${year}</td>
             <td>${absence.excused ? '&#10004;' : '&#x2718;'}</td>
-            <td>${absence.motivation}</td>
+            <td><input type="text" id="${absence.id}-absence-motivation" value="${absence.motivation}"></td>
         </tr>
     `);
+
+    $(`#${absence.id}-absence-motivation`).focusout(function(){
+        absence_modified = {
+            excused: absence.excused,
+            motivation: $(`#${absence.id}-absence-motivation`).val()
+        }
+
+        $.ajax
+        ({
+            type: "PUT",
+            url: `https://localhost:5001/students/absences/${absence.id}`,
+            contentType: 'application/json',
+            data: JSON.stringify(absence_modified),
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader('Authorization', `Bearer ${localStorage.getItem("prof_token")}`);
+            },
+            success: function (data) {
+                location.reload();
+            },
+            error: function (xhr, textStatus, errorThrown){
+                if(xhr.status == 400){
+                    alert("Something went wrong")
+                }else{
+                    console.log(xhr)
+                    //localStorage.removeItem("token");
+                    //window.location.href = "/login";
+                }
+            }
+        })
+    })
 }
 
 function createNewSubject(data, hidden){
