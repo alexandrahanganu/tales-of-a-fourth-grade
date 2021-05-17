@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pagina Profesor</title>
+    <link rel="stylesheet" href="Teacher.css">
+    <script src="https://kit.fontawesome.com/ab4339cff3.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>Prof:</h1>
+    <div id="prof-name" class="a1"></div>
+    <h1>Materie</h1>
+    <div class="row justify-content-center m-3">
+        <div class="butoane_mat">
+            <button id="subject-name"></button>
+        </div>
+
+    </div>
+
+    
+
+    <h1>Studenti:</h1>
+
+    <br>
+    <div class="butoane_mat">
+        <input id="search-bar" type="text" name="search" placeholder="Search..." autocomplete="off">
+    </div>
+    <br>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nume</th>
+                <th>Prenume</th>
+                <th>Pagina Student</th>
+            </tr>
+        </thead>
+        <tbody id="students-table">
+            
+        </tbody>
+    </table>
+</body>
+
+
+<script src = "teacher.js"></script>
+</html>

@@ -81,7 +81,8 @@ namespace TalesOfAForthGrade.Controllers
                 CNP = existingStudent.CNP,
                 Password = existingStudent.Password,
                 Grades = existingGrades.ToArray(),
-                Absences = existingStudent.Absences
+                Absences = existingStudent.Absences,
+                Assignments = existingStudent.Assignments
             });
 
             return Created("/grades", grade);

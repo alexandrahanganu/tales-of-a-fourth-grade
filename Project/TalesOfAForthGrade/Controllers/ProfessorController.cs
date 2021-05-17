@@ -40,9 +40,20 @@ namespace TalesOfAForthGrade.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<ProfessorDTO>> GetProfessor(Guid id){
-            return (await professorRepository.GetProfessorAsync(id)).AsDto();
+        public async Task<ActionResult<ProfessorDataDTO>> GetProfessor(string id){
+            Professor professor = await professorRepository.GetProfessorAsync(Guid.Parse(User.Claims.FirstOrDefault(a => a.Type == "id").Value));
+            
+            if(professor == null){
+                professor = (await professorRepository.GetProfessorAsync(Guid.Parse(id)));
+                string subject = (await subjectsRepository.GetSubjectAsync(professor.Subject)).Title;
+                return professor.AsDataDto(subject);
+            }else{
+                string subject = (await subjectsRepository.GetSubjectAsync(professor.Subject)).Title;
+                return (professor.AsDataDto(subject));
+            }
         }
+
+      
 
         [Authorize(Roles = "Admin")]
         [HttpPost]

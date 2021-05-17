@@ -11,6 +11,7 @@ using TalesOfAForthGrade.Entities;
 using System.Collections.Generic;
 using TalesOfAForthGrade.DTO.Grade;
 using TalesOfAForthGrade.DTO.Absence;
+using TalesOfAForthGrade.DTO.Assignment;
 
 namespace TalesOfAForthGrade.Controllers
 {
@@ -25,15 +26,20 @@ namespace TalesOfAForthGrade.Controllers
 
         private readonly IAbsensesRepository absensesRepository;
 
-        public StudentProfileController(IStudentsRepository repository, 
+        private readonly IAssignmentsRepository assignmentsRepository;
+
+        public StudentProfileController(
+        IStudentsRepository repository, 
         IGradesRepository gradesRepository, 
         ISubjectsRepository subjectsRepository, 
-        IAbsensesRepository absensesRepository){
+        IAbsensesRepository absensesRepository,
+        IAssignmentsRepository assignmentsRepository){
 
             this.repository = repository;
             this.gradesRepository = gradesRepository;
             this.subjectsRepository = subjectsRepository;
             this.absensesRepository = absensesRepository;
+            this.assignmentsRepository = assignmentsRepository;
         }
 
         [Authorize(Roles = "Student")]
@@ -64,7 +70,7 @@ namespace TalesOfAForthGrade.Controllers
 
             var absences = await absensesRepository.GetAbsencesStudentAsync(student.Id);
 
-             List<AbsenceDataDTO> absenceDatas = new List<AbsenceDataDTO>();
+            List<AbsenceDataDTO> absenceDatas = new List<AbsenceDataDTO>();
 
             foreach(Absence absence in absences){
                 absenceDatas.Add(new AbsenceDataDTO{
@@ -76,7 +82,22 @@ namespace TalesOfAForthGrade.Controllers
                 });
             }
 
-            return student.AsProfileDto(gradesDto, absenceDatas);
+            var assignments = await assignmentsRepository.GetAssignmentsStudentAsync(student.Id);
+
+            List<AssignmentDataDTO> assignmentDatas = new List<AssignmentDataDTO>();
+            
+            foreach(Assignment assignment in assignments){
+                assignmentDatas.Add(new AssignmentDataDTO{
+                    Id = assignment.Id,
+                    Student = assignment.Student,
+                    Subject = (await subjectsRepository.GetSubjectAsync(assignment.Subject)).Title,
+                    Done = assignment.Done,
+                    DateFrom = assignment.DateFrom,
+                    DateDue = assignment.DateDue
+                });
+            }
+
+            return student.AsProfileDto(gradesDto, absenceDatas, assignmentDatas);
         }
     }
 }

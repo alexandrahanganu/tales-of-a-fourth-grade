@@ -25,6 +25,14 @@ app.get("/admin", (req, res) => {
     res.sendFile('./static/LoginAdmin.html', { root: __dirname });
 })
 
+app.get("/prof", (req, res) => {
+    res.sendFile('./static/Teacher.html', { root: __dirname })
+})
+
+app.get("/student", (req, res) => {
+    res.sendFile('./static/ChildEdit.html', { root: __dirname })
+})
+
 
 
 

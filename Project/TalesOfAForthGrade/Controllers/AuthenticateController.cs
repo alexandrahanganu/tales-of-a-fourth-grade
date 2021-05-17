@@ -69,11 +69,11 @@ namespace TalesOfAForthGrade.Controllers
             var proffessor = await professorRepository.GetProfessorAsync(authProfessorDTO.name);
 
             if (proffessor is null){
-                return Unauthorized(new {message = "Username or Password invalid"});
+                return Unauthorized(new {message = "Username invalid"});
             }
 
             if(!CryptoHelper.comparePasswords(authProfessorDTO.Password, proffessor.Password)){
-                return Unauthorized(new {message = "Username or Password invalid"});
+                return Unauthorized(new {message = "Password invalid"});
             }
 
             var claims = new List<Claim>();

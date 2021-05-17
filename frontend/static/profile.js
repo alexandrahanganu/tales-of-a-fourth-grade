@@ -52,14 +52,26 @@ function appendData(data){
 
     data.assignments.forEach(assignment => {
         if(subjects.includes(assignment.subject)){
-
+            addAssignment(assignment)
         }else{
             createNewSubject(assignment, !firstSubject);
+            addAssignment(assignment)
             firstSubject = false;
             subjects.push(assignment.subject)
         }
     });
 
+}
+
+function addAssignment(assignment){
+    let [month, date, year] = new Date(assignment.dateDue).toLocaleDateString("en-US").split("/");
+    flag = Date.now().toString() < new Date(assignment.dateDue).toString();
+    $(`#${assignment.subject}-assingments`).append(`
+    <tr>
+        <td>${date}/${month}/${year}</td>
+        <td>${assignment.done ? '&#10004;' : flag ? '<div class="loader"><img src="loading.png" alt="loading"></div>' : '&#x2718;'}</td>
+    </tr>
+    `);
 }
 
 function addGrade(grade){
@@ -105,29 +117,29 @@ function createNewSubject(data, hidden){
 function renderSubjectTableHtml(subjectName, hidden){
     return `<div class="student-table ${hidden ? "hidden" : "visible"}" id="${subjectName}-table">
     <div class="flex-container">
-        <div class="flex-item-left">Grades
+        <div class="flex-item-left">Note
         <table id="${subjectName}-grades">
             <tr>
-                <th>Date</th>
-                <th>Grade</th>
+                <th>Data</th>
+                <th>Nota</th>
             </tr>
         </table>
         </div>
         <div class="break"></div>
-        <div class="flex-item-center" >Assignments
+        <div class="flex-item-center" >Teme
         <table id="${subjectName}-assingments">
             <tr>
-                <th>Due Date</th>
-                <th>Done</th>
+                <th>Data Finala</th>
+                <th>Facut</th>
             </tr>
         </table>
         </div>
-        <div class="flex-item-right">Tardies
+        <div class="flex-item-right">Absente
         <table id="${subjectName}-tardies">
             <tr>
-                <th>Date1</th>
-                <th>Excused</th>
-                <th>Motivation</th>
+                <th>Data</th>
+                <th>Motivata</th>
+                <th>Scuza</th>
             </tr>
         </table>
         </div>

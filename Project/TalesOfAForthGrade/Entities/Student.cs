@@ -11,5 +11,7 @@ namespace TalesOfAForthGrade.Entities
         public Guid[] Grades {get; init;}
 
         public Guid[] Absences {get; init;}
+
+        public Guid[] Assignments {get; init;}
     }
 }

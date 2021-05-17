@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using TalesOfAForthGrade.Helper;
 using System.Security.Cryptography;
+using TalesOfAForthGrade.DTO.Grade;
+using TalesOfAForthGrade.DTO.Assignment;
+using TalesOfAForthGrade.DTO.Absence;
 
 namespace TalesOfAForthGrade.Controllers
 {
@@ -17,9 +20,24 @@ namespace TalesOfAForthGrade.Controllers
     [Route("students/info")]
     public class StudentsInfoController : ControllerBase{
         private readonly IStudentsRepository repository;
+        private readonly IGradesRepository gradesRepository;
+        private readonly IAbsensesRepository absensesRepository;
+        private readonly IAssignmentsRepository assignmentsRepository;
+        private readonly IProfessorRepository professorRepository;
+        private readonly ISubjectsRepository subjectsRepository;
 
-        public StudentsInfoController(IStudentsRepository repository){
+        public StudentsInfoController(
+            IStudentsRepository repository, 
+            IGradesRepository gradesRepository, 
+            ISubjectsRepository subjectsRepository, 
+            IAbsensesRepository absensesRepository,
+            IAssignmentsRepository assignmentsRepository){
+            
             this.repository = repository;
+            this.gradesRepository = gradesRepository;
+            this.subjectsRepository = subjectsRepository;
+            this.absensesRepository = absensesRepository;
+            this.assignmentsRepository = assignmentsRepository;
         }
 
         [Authorize(Roles = "Professor,Admin")]
@@ -32,17 +50,61 @@ namespace TalesOfAForthGrade.Controllers
 
         [Authorize(Roles = "Professor,Admin")]
         [HttpGet("{id}")]
-        public async Task<ActionResult<StudentDTO>> GetStudentAsync(Guid id){
+        public async Task<ActionResult<StudentProfileDTO>> GetStudentAsync(Guid id){
+            
             var student = await repository.GetStudentAsync(id);
 
             if (student is null){
-                return NotFound();
+                return NotFound(new {
+                    message = "Student was not found",
+                });
             }
 
-            return student.AsDto();
+            var grades = await gradesRepository.GetGradesStudentAsync(student.Id);
+
+            List<GradeDataDTO> gradesDto = new List<GradeDataDTO>();
+
+            foreach(Grade grade in grades){
+                gradesDto.Add(new GradeDataDTO{
+                    Subject = (await subjectsRepository.GetSubjectAsync(grade.Subject)).Title,
+                    Value = grade.Value,
+                    Date = grade.Date
+                });
+            }
+
+            var absences = await absensesRepository.GetAbsencesStudentAsync(student.Id);
+
+            List<AbsenceDataDTO> absenceDatas = new List<AbsenceDataDTO>();
+
+            foreach(Absence absence in absences){
+                absenceDatas.Add(new AbsenceDataDTO{
+                    Id = absence.Id,
+                    Subject = (await subjectsRepository.GetSubjectAsync(absence.Subject)).Title,
+                    excused = absence.excused,
+                    motivation = absence.motivation,
+                    Date = absence.Date
+                });
+            }
+
+            var assignments = await assignmentsRepository.GetAssignmentsStudentAsync(student.Id);
+
+            List<AssignmentDataDTO> assignmentDatas = new List<AssignmentDataDTO>();
+            
+            foreach(Assignment assignment in assignments){
+                assignmentDatas.Add(new AssignmentDataDTO{
+                    Id = assignment.Id,
+                    Student = assignment.Student,
+                    Subject = (await subjectsRepository.GetSubjectAsync(assignment.Subject)).Title,
+                    Done = assignment.Done,
+                    DateFrom = assignment.DateFrom,
+                    DateDue = assignment.DateDue
+                });
+            }
+
+            return student.AsProfileDto(gradesDto, absenceDatas, assignmentDatas);
         }
 
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<ActionResult<StudentDTO>> CreateStudentAsync(CreateStudentDTO studentDTO){
             Student student = new(){
@@ -51,7 +113,8 @@ namespace TalesOfAForthGrade.Controllers
                 LastName = studentDTO.LastName,
                 CNP = studentDTO.CNP,
                 Grades = Array.Empty<Guid>(),
-                Absences = Array.Empty<Guid>()
+                Absences = Array.Empty<Guid>(),
+                Assignments = Array.Empty<Guid>()
             };
 
             await repository.CreateStudentAsync(student);
@@ -59,7 +122,7 @@ namespace TalesOfAForthGrade.Controllers
             return CreatedAtAction(nameof(GetStudentAsync), new {id = student.Id}, student.AsDto());
         }
 
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         [HttpPost ]
         [Route("list")]
         public async Task<IEnumerable<NewlyCreatedStudentDTO>> CreateStudentsAsync(List<CreateStudentDTO> studentsDTO){
@@ -84,7 +147,8 @@ namespace TalesOfAForthGrade.Controllers
                     CNP = studentDTO.CNP,
                     Password = CryptoHelper.hashPassword(password),
                     Grades = Array.Empty<Guid>(),
-                    Absences = Array.Empty<Guid>()
+                    Absences = Array.Empty<Guid>(),
+                    Assignments = Array.Empty<Guid>()
                 };
 
                 await repository.CreateStudentAsync(student);

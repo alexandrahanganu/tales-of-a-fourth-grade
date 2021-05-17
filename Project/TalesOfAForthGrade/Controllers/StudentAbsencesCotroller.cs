@@ -39,7 +39,7 @@ namespace TalesOfAForthGrade.Controllers
 
         [Authorize(Roles = "Professor")]
         [HttpPost]
-        public async Task<ActionResult<StudentDTO>> AddGrade(CreateAbsenceDTO createAbsenceDTO){
+        public async Task<ActionResult<StudentDTO>> AddAbsence(CreateAbsenceDTO createAbsenceDTO){
 
             Professor professor = await professorsRepository.GetProfessorAsync(Guid.Parse(User.Claims.FirstOrDefault(a => a.Type == "id").Value));
             Student existingStudent = await studentsRepository.GetStudentAsync(createAbsenceDTO.Student);
@@ -75,6 +75,7 @@ namespace TalesOfAForthGrade.Controllers
                 Password = existingStudent.Password,
                 Grades = existingStudent.Grades,
                 Absences = existingAbsences.ToArray(),
+                Assignments = existingStudent.Assignments
             });
 
             return Created("/absences", absence);
@@ -88,8 +89,6 @@ namespace TalesOfAForthGrade.Controllers
             if(existingItem is null){
                 return NotFound();
             }
-
-            //TODO: Should check if the Professor that requested the change is the one that created the absence
 
             Absence updatedAbsence = existingItem with {
                 Id = existingItem.Id,

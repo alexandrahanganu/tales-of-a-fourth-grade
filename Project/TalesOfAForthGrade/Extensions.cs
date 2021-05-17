@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using TalesOfAForthGrade.DTO.Absence;
+using TalesOfAForthGrade.DTO.Assignment;
 using TalesOfAForthGrade.DTO.Grade;
 using TalesOfAForthGrade.DTO.Professor;
 using TalesOfAForthGrade.DTO.Student;
@@ -17,14 +18,14 @@ namespace TalesOfAForthGrade
             };
         }
 
-        public static StudentProfileDTO AsProfileDto(this Student student, List<GradeDataDTO> grades, List<AbsenceDataDTO> absences){
+        public static StudentProfileDTO AsProfileDto(this Student student, List<GradeDataDTO> grades, List<AbsenceDataDTO> absences, List<AssignmentDataDTO> assignments){
             return new StudentProfileDTO{
                 Id = student.Id,
                 FirstName = student.FirstName,
                 LastName = student.LastName,
                 Grades = grades,
                 Absences = absences,
-                Assignments = new List<GradeDataDTO>()
+                Assignments = assignments
             };
         }
 
@@ -64,6 +65,16 @@ namespace TalesOfAForthGrade
                 excused = absence.excused,
                 motivation = absence.motivation,
                 Date = absence.Date
+            };
+        }
+
+        public static AssignmentDTO AsDto(this Entities.Assignment assignment){
+            return new AssignmentDTO{
+                Id = assignment.Id,
+                Subject = assignment.Subject,
+                Done = assignment.Done,
+                DateFrom = assignment.DateFrom,
+                DateDue = assignment.DateDue
             };
         }
     }

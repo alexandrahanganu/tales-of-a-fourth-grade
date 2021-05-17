@@ -1,10 +1,15 @@
 var choiseStudent = true;
 
 if(localStorage.getItem("token") != null){
-    window.location.href = "/profile"; // To be added after testing
+    window.location.href = "/profile"; 
+}
+
+if(localStorage.getItem("prof_token") != null){
+    window.location.href = "/prof"; 
 }
 
 $("#change-student").click(function(){
+    
     if(!choiseStudent){
         choiseStudent = true;
         $("#change-professor").removeClass("active")
@@ -19,6 +24,7 @@ $("#change-student").click(function(){
 });
 
 $("#change-professor").click(function(){
+    
     if(choiseStudent){
         choiseStudent = false;
         $("#change-student").removeClass("active")
@@ -30,7 +36,7 @@ $("#change-professor").click(function(){
         $("#student-login").addClass("hidden");
         $("#professor-login").removeClass("hidden");
     }
-})
+});
 
 
 $( "#student-login" ).submit(function( event ){
@@ -76,10 +82,11 @@ $( "#professor-login" ).submit(function( event ){
     });
 
     const credentials = {
-        username: values.username,
+        name: values.username,
         password: values.password
     }
 
+    console.log(JSON.stringify(credentials));
 
     $.ajax
     ({
@@ -88,10 +95,11 @@ $( "#professor-login" ).submit(function( event ){
         contentType: 'application/json',
         data: JSON.stringify(credentials),
         success: function (data) {
-            localStorage.setItem("token", data.token);
+            localStorage.setItem("prof_token", data.token);
+            location.href = "/prof"
         },
         error: function (XMLHttpRequest, textStatus, errorThrown){
             alert(XMLHttpRequest.responseJSON.message)
         }
-    })
+    });
 });
