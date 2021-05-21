@@ -23,5 +23,5 @@
 ## Project stack 
 
   - .NET 5/.NET 6
-  - VanillaJS(javascript)
+  - VanillaJS (javascript)
   - MongoDB
