@@ -5,25 +5,23 @@
 
 ## Functional requirements
 
--   tracking absences, tardies and excuses
--   generating reports on student activities
--   beeing accessible from the playground
+-   tracking absences and excuses
+-   being accessible from the playground
 -   tracking student grades and assignments (completed and due)
--   parent-teacher forums
--   running as an SaaS system from a hosting center
--   based on user priviledge can add excuses/grades/tardies/
+-   running as a SaaS system from a hosting center
+-   based on user priviledge can add excuses/grades/tardies
 
 ## Nonfunctional requirements
 
--   User Friendly interface (due to the fact that it will be used by user with no digital competences
-- 	Security is top priority due to competitors data breach (hash over password, encription on grades and forum posts)
+-   user friendly interface (due to the fact that it will be used by user with no digital competences)
+- 	security is top priority due to competitors data breach (hash over password)
 -   manage from 1000 to 1 million students
 -   flexibility, configurability, and security are the most important functions
--   Adhere to FERPA (Family Educational Rights and Privacy Act) security guidelines, found at [https://www2.ed.gov/policy/gen/guid/fpco/ferpa/index.html]
+-   adherence to FERPA (Family Educational Rights and Privacy Act) security guidelines, found at [https://www2.ed.gov/policy/gen/guid/fpco/ferpa/index.html]
   
 
-## Project stack - .NET 5/6; Blazor/Razor/Angular/React
+## Project stack 
 
-  - .NET 5
-  - Blazor/Razor
-  - MySQL
+  - .NET 5/.NET 6
+  - VanillaJS(javascript)
+  - MongoDB
