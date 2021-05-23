@@ -177,3 +177,8 @@ function renderSubjectTableHtml(subjectName, hidden){
     </div>
 </div>`
 }
+
+$("#logout").click(function(){
+    localStorage.removeItem("token");
+    location.href = "/login";
+});

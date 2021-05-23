@@ -1,0 +1,9 @@
+w
+nD:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\TalesOfAForthGrade.UnitTests\AuthControllerTests.csutf-8|
+sD:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\TalesOfAForthGrade.UnitTests\ProfessorControllerTests.csutf-8‚
+yD:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\TalesOfAForthGrade.UnitTests\StudentAbsencesControllerTests.csutf-8…
+|D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\TalesOfAForthGrade.UnitTests\StudentAssignmentsControllerTests.csutf-8~
+uD:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\TalesOfAForthGrade.UnitTests\StudentInfoControllerTests.csutf-8}
+rC:\Users\craci\.nuget\packages\microsoft.net.test.sdk\16.8.3\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.csutf-8£
+—D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\TalesOfAForthGrade.UnitTests\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.csutf-8¡
+•D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\TalesOfAForthGrade.UnitTests\obj\Debug\net6.0\TalesOfAForthGrade.UnitTests.AssemblyInfo.csutf-8

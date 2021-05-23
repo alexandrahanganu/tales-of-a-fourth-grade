@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SonarProjectConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/analyzer/2021/1">
+  <AnalysisConfigPath>D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\.sonarqube\conf\SonarQubeAnalysisConfig.xml</AnalysisConfigPath>
+  <ProjectPath>D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\TalesOfAForthGrade.UnitTests\TalesOfAForthGrade.UnitTests.csproj</ProjectPath>
+  <FilesToAnalyzePath>D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\.sonarqube\conf\4\FilesToAnalyze.txt</FilesToAnalyzePath>
+  <OutPath>D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\.sonarqube\out\4</OutPath>
+  <ProjectType>Test</ProjectType>
+  <TargetFramework>net6.0</TargetFramework>
+</SonarProjectConfig>

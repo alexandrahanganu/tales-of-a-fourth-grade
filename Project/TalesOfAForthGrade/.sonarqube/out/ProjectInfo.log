@@ -1,0 +1,25 @@
+Product projects
+---------------------------------------
+D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\TalesOfAForthGrade.Api\TalesOfAForthGrade.Api.csproj
+
+
+Test projects
+---------------------------------------
+D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\TalesOfAForthGrade.UnitTests\TalesOfAForthGrade.UnitTests.csproj
+
+
+Invalid projects
+---------------------------------------
+{none}
+
+
+Skipped projects
+---------------------------------------
+D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\build.proj
+
+
+Excluded projects
+---------------------------------------
+{none}
+
+

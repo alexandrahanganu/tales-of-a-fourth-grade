@@ -1,0 +1,51 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\build.proj": {}
+  },
+  "projects": {
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\build.proj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\build.proj",
+        "projectName": "build",
+        "projectPath": "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\build.proj",
+        "packagesPath": "C:\\Users\\craci\\.nuget\\packages\\",
+        "outputPath": "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\craci\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net45"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net45": {
+          "targetAlias": "net45",
+          "dependencies": {
+            "coverlet.msbuild": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.3, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.3.21202.5\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

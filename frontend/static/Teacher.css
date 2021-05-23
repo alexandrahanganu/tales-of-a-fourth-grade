@@ -55,6 +55,23 @@ tr:empty::before {
 }
 
 
+.fa-sign-out-alt{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: red;
+  }
+
+.clickable{
+    cursor: pointer;
+}
+
+#prof-name{
+    font-size: 40px;
+}
+
+
 /* Css Teo ######################################## */
 
 body {

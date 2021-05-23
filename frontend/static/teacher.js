@@ -106,3 +106,8 @@ function getStudentTableHTML(student){
     </tr>
     `
 }
+
+$("#logout").click(function(){
+    localStorage.removeItem("prof_token");
+    location.href = "/login";
+});
