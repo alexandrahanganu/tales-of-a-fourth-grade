@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <ProjectName>TalesOfAForthGrade.Api</ProjectName>
+  <ProjectLanguage>C#</ProjectLanguage>
+  <ProjectType>Product</ProjectType>
+  <ProjectGuid>caea8dc4-438c-4e61-9c2f-49b1bd69a129</ProjectGuid>
+  <FullPath>D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\TalesOfAForthGrade.Api\TalesOfAForthGrade.Api.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResults>
+    <AnalysisResult Id="FilesToAnalyze" Location="D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\.sonarqube\conf\6\FilesToAnalyze.txt" />
+  </AnalysisResults>
+  <AnalysisSettings>
+    <Property Name="sonar.coverage.exclusions">**DTO*.cs, **/Entities/**, **/Extensions.cs, **/MongoDb**.cs, **/Startup.cs, **/JwtConfig.cs, **/Program.cs</Property>
+    <Property Name="sonar.cs.roslyn.reportFilePaths">D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\TalesOfAForthGrade.Api\bin\Debug\net6.0\TalesOfAForthGrade.Api.dll.RoslynCA.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\.sonarqube\out\6</Property>
+  </AnalysisSettings>
+  <Configuration>Debug</Configuration>
+  <Platform>AnyCPU</Platform>
+  <TargetFramework>net6.0</TargetFramework>
+</ProjectInfo>

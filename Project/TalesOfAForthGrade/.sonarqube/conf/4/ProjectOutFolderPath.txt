@@ -1,0 +1,1 @@
+D:\.net\tales-of-a-fourth-grade\Project\TalesOfAForthGrade\.sonarqube\out\4

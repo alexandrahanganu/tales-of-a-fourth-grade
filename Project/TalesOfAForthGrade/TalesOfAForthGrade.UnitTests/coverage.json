@@ -1,0 +1,2943 @@
+{
+  "TalesOfAForthGrade.Api.dll": {
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Extensions.cs": {
+      "TalesOfAForthGrade.Api.Extensions": {
+        "TalesOfAForthGrade.Api.DTO.Student.StudentDTO TalesOfAForthGrade.Api.Extensions::AsDto(TalesOfAForthGrade.Api.Entities.Student)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0
+          },
+          "Branches": []
+        },
+        "TalesOfAForthGrade.Api.DTO.Student.StudentProfileDTO TalesOfAForthGrade.Api.Extensions::AsProfileDto(TalesOfAForthGrade.Api.Entities.Student,System.Collections.Generic.List`1<TalesOfAForthGrade.Api.DTO.Grade.GradeDataDTO>,System.Collections.Generic.List`1<TalesOfAForthGrade.Api.DTO.Absence.AbsenceDataDTO>,System.Collections.Generic.List`1<TalesOfAForthGrade.Api.DTO.Assignment.AssignmentDataDTO>)": {
+          "Lines": {
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0
+          },
+          "Branches": []
+        },
+        "TalesOfAForthGrade.Api.DTO.Grade.GradeDTO TalesOfAForthGrade.Api.Extensions::AsDto(TalesOfAForthGrade.Api.Entities.Grade)": {
+          "Lines": {
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0
+          },
+          "Branches": []
+        },
+        "TalesOfAForthGrade.Api.DTO.Professor.ProfessorDTO TalesOfAForthGrade.Api.Extensions::AsDto(TalesOfAForthGrade.Api.Entities.Professor)": {
+          "Lines": {
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0
+          },
+          "Branches": []
+        },
+        "TalesOfAForthGrade.Api.DTO.Professor.ProfessorDataDTO TalesOfAForthGrade.Api.Extensions::AsDataDto(TalesOfAForthGrade.Api.Entities.Professor,System.String)": {
+          "Lines": {
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0
+          },
+          "Branches": []
+        },
+        "TalesOfAForthGrade.Api.DTO.Absence.AbsenceDTO TalesOfAForthGrade.Api.Extensions::AsDto(TalesOfAForthGrade.Api.Entities.Absence)": {
+          "Lines": {
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0
+          },
+          "Branches": []
+        },
+        "TalesOfAForthGrade.Api.DTO.Assignment.AssignmentDTO TalesOfAForthGrade.Api.Extensions::AsDto(TalesOfAForthGrade.Api.Entities.Assignment)": {
+          "Lines": {
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Program.cs": {
+      "TalesOfAForthGrade.Api.Program": {
+        "System.Void TalesOfAForthGrade.Api.Program::Main(System.String[])": {
+          "Lines": {
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.Extensions.Hosting.IHostBuilder TalesOfAForthGrade.Api.Program::CreateHostBuilder(System.String[])": {
+          "Lines": {
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Startup.cs": {
+      "TalesOfAForthGrade.Api.Startup": {
+        "Microsoft.Extensions.Configuration.IConfiguration TalesOfAForthGrade.Api.Startup::get_Configuration()": {
+          "Lines": {
+            "29": 0
+          },
+          "Branches": []
+        },
+        "System.Void TalesOfAForthGrade.Api.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "33": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "48": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "87": 0
+          },
+          "Branches": []
+        },
+        "System.Void TalesOfAForthGrade.Api.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)": {
+          "Lines": {
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "99": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0
+          },
+          "Branches": [
+            {
+              "Line": 92,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 92,
+              "Offset": 9,
+              "EndOffset": 66,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void TalesOfAForthGrade.Api.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)": {
+          "Lines": {
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Settings\\JwtConfig.cs": {
+      "TalesOfAForthGrade.Api.Settings.JwtConfig": {
+        "System.String TalesOfAForthGrade.Api.Settings.JwtConfig::get_Key()": {
+          "Lines": {
+            "4": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.Settings.JwtConfig::get_Issuer()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Settings\\MongoDbSettings.cs": {
+      "TalesOfAForthGrade.Api.Settings.MongoDbSettings": {
+        "System.String TalesOfAForthGrade.Api.Settings.MongoDbSettings::get_URL()": {
+          "Lines": {
+            "4": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.Settings.MongoDbSettings::get_ConnectionString()": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Services\\StudentServices.cs": {
+      "TalesOfAForthGrade.Api.Services.StudentServices": {
+        "System.Void TalesOfAForthGrade.Api.Services.StudentServices::.ctor(TalesOfAForthGrade.Api.Repositories.IGradesRepository,TalesOfAForthGrade.Api.Repositories.ISubjectsRepository,TalesOfAForthGrade.Api.Repositories.IAbsensesRepository,TalesOfAForthGrade.Api.Repositories.IAssignmentsRepository)": {
+          "Lines": {
+            "21": 1,
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 2,
+            "26": 1,
+            "27": 1,
+            "28": 1,
+            "29": 1,
+            "30": 1
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Services.StudentServices/<GetStudentProfile>d__5": {
+        "System.Void TalesOfAForthGrade.Api.Services.StudentServices/<GetStudentProfile>d__5::MoveNext()": {
+          "Lines": {
+            "32": 0,
+            "34": 0,
+            "36": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "46": 0,
+            "48": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "60": 0,
+            "62": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "75": 0,
+            "76": 0
+          },
+          "Branches": [
+            {
+              "Line": 38,
+              "Offset": 566,
+              "EndOffset": 254,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 38,
+              "Offset": 566,
+              "EndOffset": 571,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 50,
+              "Offset": 1153,
+              "EndOffset": 795,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 50,
+              "Offset": 1153,
+              "EndOffset": 1158,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 64,
+              "Offset": 1763,
+              "EndOffset": 1382,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 64,
+              "Offset": 1763,
+              "EndOffset": 1768,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Repositories\\MongoDbAbsensesRepository.cs": {
+      "TalesOfAForthGrade.Api.Repositories.MongoDbAbsensesRepository": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbAbsensesRepository::.ctor(MongoDB.Driver.IMongoClient)": {
+          "Lines": {
+            "16": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbAbsensesRepository/<CreateAbsenceAsync>d__5": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbAbsensesRepository/<CreateAbsenceAsync>d__5::MoveNext()": {
+          "Lines": {
+            "24": 0,
+            "25": 0,
+            "26": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbAbsensesRepository/<GetAbsence>d__6": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbAbsensesRepository/<GetAbsence>d__6::MoveNext()": {
+          "Lines": {
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbAbsensesRepository/<GetAbsencesStudentAsync>d__7": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbAbsensesRepository/<GetAbsencesStudentAsync>d__7::MoveNext()": {
+          "Lines": {
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbAbsensesRepository/<UpdateAbsenceAsync>d__8": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbAbsensesRepository/<UpdateAbsenceAsync>d__8::MoveNext()": {
+          "Lines": {
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Repositories\\MongoDbAssignmentRepossitory.cs": {
+      "TalesOfAForthGrade.Api.Repositories.MongoDbAssignmentRepository": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbAssignmentRepository::.ctor(MongoDB.Driver.IMongoClient)": {
+          "Lines": {
+            "16": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbAssignmentRepository/<CreateAssignmentAsync>d__5": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbAssignmentRepository/<CreateAssignmentAsync>d__5::MoveNext()": {
+          "Lines": {
+            "24": 0,
+            "25": 0,
+            "26": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbAssignmentRepository/<GetAssignmentAsync>d__6": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbAssignmentRepository/<GetAssignmentAsync>d__6::MoveNext()": {
+          "Lines": {
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbAssignmentRepository/<GetAssignmentsStudentAsync>d__7": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbAssignmentRepository/<GetAssignmentsStudentAsync>d__7::MoveNext()": {
+          "Lines": {
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbAssignmentRepository/<UpdateAssignmentsAsync>d__8": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbAssignmentRepository/<UpdateAssignmentsAsync>d__8::MoveNext()": {
+          "Lines": {
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Repositories\\MongoDbGradesRepository.cs": {
+      "TalesOfAForthGrade.Api.Repositories.MongoDbGradesRepository": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbGradesRepository::.ctor(MongoDB.Driver.IMongoClient)": {
+          "Lines": {
+            "16": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbGradesRepository/<CreateGradeAsync>d__5": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbGradesRepository/<CreateGradeAsync>d__5::MoveNext()": {
+          "Lines": {
+            "24": 0,
+            "25": 0,
+            "26": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbGradesRepository/<GetGradeAsync>d__6": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbGradesRepository/<GetGradeAsync>d__6::MoveNext()": {
+          "Lines": {
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbGradesRepository/<GetGradesAsync>d__7": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbGradesRepository/<GetGradesAsync>d__7::MoveNext()": {
+          "Lines": {
+            "35": 0,
+            "36": 0,
+            "37": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbGradesRepository/<GetGradesStudentAsync>d__8": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbGradesRepository/<GetGradesStudentAsync>d__8::MoveNext()": {
+          "Lines": {
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbGradesRepository/<UpdateGradeAsync>d__9": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbGradesRepository/<UpdateGradeAsync>d__9::MoveNext()": {
+          "Lines": {
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Repositories\\MongoDbProfessorRepository.cs": {
+      "TalesOfAForthGrade.Api.Repositories.MongoDbProfessorRepository": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbProfessorRepository::.ctor(MongoDB.Driver.IMongoClient)": {
+          "Lines": {
+            "17": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbProfessorRepository/<CreateProfessorAsync>d__5": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbProfessorRepository/<CreateProfessorAsync>d__5::MoveNext()": {
+          "Lines": {
+            "25": 0,
+            "26": 0,
+            "27": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbProfessorRepository/<DeleteProfessorAsync>d__6": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbProfessorRepository/<DeleteProfessorAsync>d__6::MoveNext()": {
+          "Lines": {
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbProfessorRepository/<GetProfessorAsync>d__7": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbProfessorRepository/<GetProfessorAsync>d__7::MoveNext()": {
+          "Lines": {
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbProfessorRepository/<GetProfessorAsync>d__8": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbProfessorRepository/<GetProfessorAsync>d__8::MoveNext()": {
+          "Lines": {
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbProfessorRepository/<GetProfessorsAsync>d__9": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbProfessorRepository/<GetProfessorsAsync>d__9::MoveNext()": {
+          "Lines": {
+            "47": 0,
+            "48": 0,
+            "49": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbProfessorRepository/<UpdateProfessorAsync>d__10": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbProfessorRepository/<UpdateProfessorAsync>d__10::MoveNext()": {
+          "Lines": {
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Repositories\\MongoDbStudentRepository.cs": {
+      "TalesOfAForthGrade.Api.Repositories.MongoDbStudentRepository": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbStudentRepository::.ctor(MongoDB.Driver.IMongoClient)": {
+          "Lines": {
+            "16": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbStudentRepository/<CreateStudentAsync>d__5": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbStudentRepository/<CreateStudentAsync>d__5::MoveNext()": {
+          "Lines": {
+            "24": 0,
+            "25": 0,
+            "26": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbStudentRepository/<DeleteStudentAsync>d__6": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbStudentRepository/<DeleteStudentAsync>d__6::MoveNext()": {
+          "Lines": {
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbStudentRepository/<GetStudentAsync>d__7": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbStudentRepository/<GetStudentAsync>d__7::MoveNext()": {
+          "Lines": {
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbStudentRepository/<GetStudentAsync>d__8": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbStudentRepository/<GetStudentAsync>d__8::MoveNext()": {
+          "Lines": {
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbStudentRepository/<GetStudentsAsync>d__9": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbStudentRepository/<GetStudentsAsync>d__9::MoveNext()": {
+          "Lines": {
+            "46": 0,
+            "47": 0,
+            "48": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbStudentRepository/<UpdateStudentAsync>d__10": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbStudentRepository/<UpdateStudentAsync>d__10::MoveNext()": {
+          "Lines": {
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Repositories\\MongoDbSubjectRepository.cs": {
+      "TalesOfAForthGrade.Api.Repositories.MongoDbSubjectRepository": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbSubjectRepository::.ctor(MongoDB.Driver.IMongoClient)": {
+          "Lines": {
+            "16": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbSubjectRepository/<CreateSubjectAsync>d__5": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbSubjectRepository/<CreateSubjectAsync>d__5::MoveNext()": {
+          "Lines": {
+            "24": 0,
+            "25": 0,
+            "26": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbSubjectRepository/<GetSubjectAsync>d__6": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbSubjectRepository/<GetSubjectAsync>d__6::MoveNext()": {
+          "Lines": {
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbSubjectRepository/<GetSubjectAsync>d__7": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbSubjectRepository/<GetSubjectAsync>d__7::MoveNext()": {
+          "Lines": {
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Repositories.MongoDbSubjectRepository/<GetSubjectsAsync>d__8": {
+        "System.Void TalesOfAForthGrade.Api.Repositories.MongoDbSubjectRepository/<GetSubjectsAsync>d__8::MoveNext()": {
+          "Lines": {
+            "41": 0,
+            "42": 0,
+            "43": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Helpers\\CryptoHelper.cs": {
+      "TalesOfAForthGrade.Api.Helper.CryptoHelper": {
+        "System.String TalesOfAForthGrade.Api.Helper.CryptoHelper::hashPassword(System.String)": {
+          "Lines": {
+            "6": 0,
+            "8": 0,
+            "10": 0,
+            "11": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "17": 0,
+            "19": 0,
+            "20": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean TalesOfAForthGrade.Api.Helper.CryptoHelper::comparePasswords(System.String,System.String)": {
+          "Lines": {
+            "22": 0,
+            "23": 0,
+            "25": 0,
+            "26": 0,
+            "28": 0,
+            "29": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "35": 0,
+            "36": 0
+          },
+          "Branches": [
+            {
+              "Line": 31,
+              "Offset": 98,
+              "EndOffset": 55,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 32,
+              "Offset": 75,
+              "EndOffset": 77,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 32,
+              "Offset": 75,
+              "EndOffset": 82,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 31,
+              "Offset": 98,
+              "EndOffset": 100,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Helpers\\JwtHelper.cs": {
+      "TalesOfAForthGrade.Api.Helper.JwtHelper": {
+        "System.IdentityModel.Tokens.Jwt.JwtSecurityToken TalesOfAForthGrade.Api.Helper.JwtHelper::GetJwtToken(System.String,System.String,System.String,System.String,System.Int32,System.Security.Claims.Claim[])": {
+          "Lines": {
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "34": 0,
+            "35": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0
+          },
+          "Branches": [
+            {
+              "Line": 27,
+              "Offset": 63,
+              "EndOffset": 65,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 63,
+              "EndOffset": 93,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Helpers\\RandomHelper.cs": {
+      "TalesOfAForthGrade.Api.Helper.RandomHelper": {
+        "System.String TalesOfAForthGrade.Api.Helper.RandomHelper::GenerateRandomString(System.Int32)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 TalesOfAForthGrade.Api.Helper.RandomHelper::RandomIntFromRNG(System.Int32)": {
+          "Lines": {
+            "19": 0,
+            "21": 0,
+            "22": 0,
+            "25": 0,
+            "28": 0,
+            "29": 0
+          },
+          "Branches": []
+        },
+        "System.Void TalesOfAForthGrade.Api.Helper.RandomHelper::.cctor()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Entities\\Absence.cs": {
+      "TalesOfAForthGrade.Api.Entities.Absence": {
+        "System.Guid TalesOfAForthGrade.Api.Entities.Absence::get_Id()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.Guid TalesOfAForthGrade.Api.Entities.Absence::get_Student()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Guid TalesOfAForthGrade.Api.Entities.Absence::get_Subject()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean TalesOfAForthGrade.Api.Entities.Absence::get_excused()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.Entities.Absence::get_motivation()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset TalesOfAForthGrade.Api.Entities.Absence::get_Date()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Entities\\Assignment.cs": {
+      "TalesOfAForthGrade.Api.Entities.Assignment": {
+        "System.Guid TalesOfAForthGrade.Api.Entities.Assignment::get_Id()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.Guid TalesOfAForthGrade.Api.Entities.Assignment::get_Student()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Guid TalesOfAForthGrade.Api.Entities.Assignment::get_Subject()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean TalesOfAForthGrade.Api.Entities.Assignment::get_Done()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset TalesOfAForthGrade.Api.Entities.Assignment::get_DateFrom()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset TalesOfAForthGrade.Api.Entities.Assignment::get_DateDue()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Entities\\Grade.cs": {
+      "TalesOfAForthGrade.Api.Entities.Grade": {
+        "System.Guid TalesOfAForthGrade.Api.Entities.Grade::get_Id()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.Guid TalesOfAForthGrade.Api.Entities.Grade::get_Student()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Guid TalesOfAForthGrade.Api.Entities.Grade::get_Subject()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 TalesOfAForthGrade.Api.Entities.Grade::get_Value()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset TalesOfAForthGrade.Api.Entities.Grade::get_Date()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Entities\\Professor.cs": {
+      "TalesOfAForthGrade.Api.Entities.Professor": {
+        "System.Guid TalesOfAForthGrade.Api.Entities.Professor::get_Id()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.Entities.Professor::get_LastName()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.Entities.Professor::get_FirstName()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.Entities.Professor::get_username()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.Guid TalesOfAForthGrade.Api.Entities.Professor::get_Subject()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.Entities.Professor::get_Password()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Entities\\Student.cs": {
+      "TalesOfAForthGrade.Api.Entities.Student": {
+        "System.Guid TalesOfAForthGrade.Api.Entities.Student::get_Id()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.Entities.Student::get_LastName()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.Entities.Student::get_FirstName()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.Entities.Student::get_CNP()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.Entities.Student::get_Password()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.Guid[] TalesOfAForthGrade.Api.Entities.Student::get_Grades()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.Guid[] TalesOfAForthGrade.Api.Entities.Student::get_Absences()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "System.Guid[] TalesOfAForthGrade.Api.Entities.Student::get_Assignments()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Entities\\Subject.cs": {
+      "TalesOfAForthGrade.Api.Entities.Subject": {
+        "System.Guid TalesOfAForthGrade.Api.Entities.Subject::get_Id()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.Entities.Subject::get_Title()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Student\\AuthStudentDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Student.AuthStudentDTO": {
+        "System.String TalesOfAForthGrade.Api.DTO.Student.AuthStudentDTO::get_CNP()": {
+          "Lines": {
+            "4": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Student.AuthStudentDTO::get_Password()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Student\\CreateStudentDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Student.CreateStudentDTO": {
+        "System.String TalesOfAForthGrade.Api.DTO.Student.CreateStudentDTO::get_LastName()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Student.CreateStudentDTO::get_FirstName()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Student.CreateStudentDTO::get_CNP()": {
+          "Lines": {
+            "20": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Student\\NewlyCreatedStudentDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Student.NewlyCreatedStudentDTO": {
+        "System.Guid TalesOfAForthGrade.Api.DTO.Student.NewlyCreatedStudentDTO::get_Id()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Student.NewlyCreatedStudentDTO::get_LastName()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Student.NewlyCreatedStudentDTO::get_FirstName()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Student.NewlyCreatedStudentDTO::get_CNP()": {
+          "Lines": {
+            "17": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Student.NewlyCreatedStudentDTO::get_password()": {
+          "Lines": {
+            "19": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Student\\StudentDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Student.StudentDTO": {
+        "System.Guid TalesOfAForthGrade.Api.DTO.Student.StudentDTO::get_Id()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Student.StudentDTO::get_LastName()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Student.StudentDTO::get_FirstName()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Student.StudentDTO::get_CNP()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Student\\StudentProfileDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Student.StudentProfileDTO": {
+        "System.Guid TalesOfAForthGrade.Api.DTO.Student.StudentProfileDTO::get_Id()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Student.StudentProfileDTO::get_LastName()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Student.StudentProfileDTO::get_FirstName()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<TalesOfAForthGrade.Api.DTO.Grade.GradeDataDTO> TalesOfAForthGrade.Api.DTO.Student.StudentProfileDTO::get_Grades()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<TalesOfAForthGrade.Api.DTO.Absence.AbsenceDataDTO> TalesOfAForthGrade.Api.DTO.Student.StudentProfileDTO::get_Absences()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<TalesOfAForthGrade.Api.DTO.Assignment.AssignmentDataDTO> TalesOfAForthGrade.Api.DTO.Student.StudentProfileDTO::get_Assignments()": {
+          "Lines": {
+            "16": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Student\\UpdateStudentDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Student.UpdateStudentDTO": {
+        "System.String TalesOfAForthGrade.Api.DTO.Student.UpdateStudentDTO::get_LastName()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Student.UpdateStudentDTO::get_FirstName()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Student.UpdateStudentDTO::get_CNP()": {
+          "Lines": {
+            "20": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Professor\\AuthProfessorDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Professor.AuthProfessorDTO": {
+        "System.String TalesOfAForthGrade.Api.DTO.Professor.AuthProfessorDTO::get_name()": {
+          "Lines": {
+            "4": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Professor.AuthProfessorDTO::get_Password()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Professor\\CreateProfessorDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Professor.CreateProfessorDTO": {
+        "System.String TalesOfAForthGrade.Api.DTO.Professor.CreateProfessorDTO::get_LastName()": {
+          "Lines": {
+            "4": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Professor.CreateProfessorDTO::get_FirstName()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Professor.CreateProfessorDTO::get_Subject()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Professor\\NewlyCreatedProfessorDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Professor.NewlyCreatedProfessorDTO": {
+        "System.Guid TalesOfAForthGrade.Api.DTO.Professor.NewlyCreatedProfessorDTO::get_Id()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Professor.NewlyCreatedProfessorDTO::get_LastName()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Professor.NewlyCreatedProfessorDTO::get_FirstName()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Professor.NewlyCreatedProfessorDTO::get_Subject()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Professor.NewlyCreatedProfessorDTO::get_Password()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Professor.NewlyCreatedProfessorDTO::get_username()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Professor\\ProfessorDataDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Professor.ProfessorDataDTO": {
+        "System.Guid TalesOfAForthGrade.Api.DTO.Professor.ProfessorDataDTO::get_Id()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Professor.ProfessorDataDTO::get_LastName()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Professor.ProfessorDataDTO::get_FirstName()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Professor.ProfessorDataDTO::get_Subject()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Professor.ProfessorDataDTO::get_username()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Professor\\ProfessorDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Professor.ProfessorDTO": {
+        "System.Guid TalesOfAForthGrade.Api.DTO.Professor.ProfessorDTO::get_Id()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Professor.ProfessorDTO::get_LastName()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Professor.ProfessorDTO::get_FirstName()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Guid TalesOfAForthGrade.Api.DTO.Professor.ProfessorDTO::get_Subject()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Professor\\UpdateProfessorDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Professor.UpdateProfessorDTO": {
+        "System.String TalesOfAForthGrade.Api.DTO.Professor.UpdateProfessorDTO::get_LastName()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Professor.UpdateProfessorDTO::get_FirstName()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Professor.UpdateProfessorDTO::get_Subject()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Grade\\CreateGradeDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Grade.CreateGradeDTO": {
+        "System.Guid TalesOfAForthGrade.Api.DTO.Grade.CreateGradeDTO::get_Student()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 TalesOfAForthGrade.Api.DTO.Grade.CreateGradeDTO::get_Value()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset TalesOfAForthGrade.Api.DTO.Grade.CreateGradeDTO::get_Date()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Grade\\GradeDataDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Grade.GradeDataDTO": {
+        "System.String TalesOfAForthGrade.Api.DTO.Grade.GradeDataDTO::get_Subject()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 TalesOfAForthGrade.Api.DTO.Grade.GradeDataDTO::get_Value()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset TalesOfAForthGrade.Api.DTO.Grade.GradeDataDTO::get_Date()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Grade\\GradeDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Grade.GradeDTO": {
+        "System.Guid TalesOfAForthGrade.Api.DTO.Grade.GradeDTO::get_Id()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.Guid TalesOfAForthGrade.Api.DTO.Grade.GradeDTO::get_Student()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Guid TalesOfAForthGrade.Api.DTO.Grade.GradeDTO::get_Subject()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 TalesOfAForthGrade.Api.DTO.Grade.GradeDTO::get_Value()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset TalesOfAForthGrade.Api.DTO.Grade.GradeDTO::get_Date()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Grade\\UpdateGradeDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Grade.UpdateGradeDTO": {
+        "System.Int32 TalesOfAForthGrade.Api.DTO.Grade.UpdateGradeDTO::get_Value()": {
+          "Lines": {
+            "4": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Assignments\\AssignmentDataDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Assignment.AssignmentDataDTO": {
+        "System.Guid TalesOfAForthGrade.Api.DTO.Assignment.AssignmentDataDTO::get_Id()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.Guid TalesOfAForthGrade.Api.DTO.Assignment.AssignmentDataDTO::get_Student()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Assignment.AssignmentDataDTO::get_Subject()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean TalesOfAForthGrade.Api.DTO.Assignment.AssignmentDataDTO::get_Done()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset TalesOfAForthGrade.Api.DTO.Assignment.AssignmentDataDTO::get_DateFrom()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset TalesOfAForthGrade.Api.DTO.Assignment.AssignmentDataDTO::get_DateDue()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Assignments\\AssignmentDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Assignment.AssignmentDTO": {
+        "System.Guid TalesOfAForthGrade.Api.DTO.Assignment.AssignmentDTO::get_Id()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.Guid TalesOfAForthGrade.Api.DTO.Assignment.AssignmentDTO::get_Subject()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean TalesOfAForthGrade.Api.DTO.Assignment.AssignmentDTO::get_Done()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset TalesOfAForthGrade.Api.DTO.Assignment.AssignmentDTO::get_DateFrom()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset TalesOfAForthGrade.Api.DTO.Assignment.AssignmentDTO::get_DateDue()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Assignments\\CreateAssignmentDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Assignment.CreateAssignmentDTO": {
+        "System.Guid TalesOfAForthGrade.Api.DTO.Assignment.CreateAssignmentDTO::get_Student()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset TalesOfAForthGrade.Api.DTO.Assignment.CreateAssignmentDTO::get_DateFrom()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset TalesOfAForthGrade.Api.DTO.Assignment.CreateAssignmentDTO::get_DateDue()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Assignments\\UpdateAssignmentDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Assignment.UpdateAssignmentDTO": {
+        "System.Boolean TalesOfAForthGrade.Api.DTO.Assignment.UpdateAssignmentDTO::get_Done()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset TalesOfAForthGrade.Api.DTO.Assignment.UpdateAssignmentDTO::get_DateDue()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Admin\\AuthAdminDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Admin.AuthAdminDTO": {
+        "System.String TalesOfAForthGrade.Api.DTO.Admin.AuthAdminDTO::get_name()": {
+          "Lines": {
+            "4": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Admin.AuthAdminDTO::get_Password()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Absence\\AbsenceDataDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Absence.AbsenceDataDTO": {
+        "System.Guid TalesOfAForthGrade.Api.DTO.Absence.AbsenceDataDTO::get_Id()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Absence.AbsenceDataDTO::get_Subject()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean TalesOfAForthGrade.Api.DTO.Absence.AbsenceDataDTO::get_excused()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Absence.AbsenceDataDTO::get_motivation()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset TalesOfAForthGrade.Api.DTO.Absence.AbsenceDataDTO::get_Date()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Absence\\AbsenceDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Absence.AbsenceDTO": {
+        "System.Guid TalesOfAForthGrade.Api.DTO.Absence.AbsenceDTO::get_Id()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.Guid TalesOfAForthGrade.Api.DTO.Absence.AbsenceDTO::get_Subject()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean TalesOfAForthGrade.Api.DTO.Absence.AbsenceDTO::get_excused()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Absence.AbsenceDTO::get_motivation()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset TalesOfAForthGrade.Api.DTO.Absence.AbsenceDTO::get_Date()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Absence\\CreateAbsenceDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Absence.CreateAbsenceDTO": {
+        "System.Guid TalesOfAForthGrade.Api.DTO.Absence.CreateAbsenceDTO::get_Student()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset TalesOfAForthGrade.Api.DTO.Absence.CreateAbsenceDTO::get_Date()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\DTO\\Absence\\UpdateAbsenceDTO.cs": {
+      "TalesOfAForthGrade.Api.DTO.Absence.UpdateAbsenceDTO": {
+        "System.Boolean TalesOfAForthGrade.Api.DTO.Absence.UpdateAbsenceDTO::get_excused()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.String TalesOfAForthGrade.Api.DTO.Absence.UpdateAbsenceDTO::get_motivation()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Controllers\\AuthenticateController.cs": {
+      "TalesOfAForthGrade.Api.Controllers.AuthenticateController": {
+        "Microsoft.AspNetCore.Mvc.ActionResult`1<System.Object> TalesOfAForthGrade.Api.Controllers.AuthenticateController::AuthenticateAdmin(TalesOfAForthGrade.Api.DTO.Admin.AuthAdminDTO)": {
+          "Lines": {
+            "102": 0,
+            "104": 0,
+            "105": 0,
+            "108": 0,
+            "109": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "125": 0
+          },
+          "Branches": [
+            {
+              "Line": 104,
+              "Offset": 17,
+              "EndOffset": 19,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 17,
+              "EndOffset": 37,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 40,
+              "EndOffset": 42,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 40,
+              "EndOffset": 67,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void TalesOfAForthGrade.Api.Controllers.AuthenticateController::.ctor(TalesOfAForthGrade.Api.Repositories.IStudentsRepository,TalesOfAForthGrade.Api.Repositories.IProfessorRepository,Microsoft.Extensions.Configuration.IConfiguration)": {
+          "Lines": {
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.AuthenticateController/<AuthenticateStudent>d__4": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.AuthenticateController/<AuthenticateStudent>d__4::MoveNext()": {
+          "Lines": {
+            "34": 0,
+            "35": 0,
+            "37": 0,
+            "38": 0,
+            "41": 0,
+            "42": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "63": 0
+          },
+          "Branches": [
+            {
+              "Line": 37,
+              "Offset": 169,
+              "EndOffset": 171,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 37,
+              "Offset": 169,
+              "EndOffset": 204,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 41,
+              "Offset": 238,
+              "EndOffset": 240,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 41,
+              "Offset": 238,
+              "EndOffset": 273,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.AuthenticateController/<AuthenticateProfessor>d__5": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.AuthenticateController/<AuthenticateProfessor>d__5::MoveNext()": {
+          "Lines": {
+            "68": 0,
+            "69": 0,
+            "71": 0,
+            "72": 0,
+            "75": 0,
+            "76": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "97": 0
+          },
+          "Branches": [
+            {
+              "Line": 71,
+              "Offset": 169,
+              "EndOffset": 171,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 71,
+              "Offset": 169,
+              "EndOffset": 204,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 75,
+              "Offset": 238,
+              "EndOffset": 240,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 75,
+              "Offset": 238,
+              "EndOffset": 273,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Controllers\\ProfessorController.cs": {
+      "TalesOfAForthGrade.Api.Controllers.ProfessorController": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.ProfessorController::.ctor(TalesOfAForthGrade.Api.Repositories.IProfessorRepository,TalesOfAForthGrade.Api.Repositories.ISubjectsRepository)": {
+          "Lines": {
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.ProfessorController/<GetProfessors>d__3": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.ProfessorController/<GetProfessors>d__3::MoveNext()": {
+          "Lines": {
+            "28": 0,
+            "29": 0,
+            "31": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "39": 0,
+            "40": 0
+          },
+          "Branches": [
+            {
+              "Line": 33,
+              "Offset": 421,
+              "EndOffset": 199,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 33,
+              "Offset": 421,
+              "EndOffset": 426,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.ProfessorController/<>c": {
+        "System.Boolean TalesOfAForthGrade.Api.Controllers.ProfessorController/<>c::<GetProfessor>b__4_0(System.Security.Claims.Claim)": {
+          "Lines": {
+            "44": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.ProfessorController/<GetProfessor>d__4": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.ProfessorController/<GetProfessor>d__4::MoveNext()": {
+          "Lines": {
+            "43": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "54": 0
+          },
+          "Branches": [
+            {
+              "Line": 46,
+              "Offset": 260,
+              "EndOffset": 265,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 46,
+              "Offset": 260,
+              "EndOffset": 587,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.ProfessorController/<CreateProfessor>d__5": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.ProfessorController/<CreateProfessor>d__5::MoveNext()": {
+          "Lines": {
+            "60": 0,
+            "61": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "69": 0,
+            "70": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "80": 0,
+            "82": 0,
+            "83": 0
+          },
+          "Branches": [
+            {
+              "Line": 63,
+              "Offset": 197,
+              "EndOffset": 202,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 63,
+              "Offset": 197,
+              "EndOffset": 360,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.ProfessorController/<CreateProfessors>d__6": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.ProfessorController/<CreateProfessors>d__6::MoveNext()": {
+          "Lines": {
+            "88": 0,
+            "89": 0,
+            "91": 0,
+            "92": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "100": 0,
+            "101": 0,
+            "103": 0,
+            "104": 0,
+            "105": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "125": 0,
+            "126": 0,
+            "128": 0,
+            "129": 0
+          },
+          "Branches": [
+            {
+              "Line": 91,
+              "Offset": 922,
+              "EndOffset": 83,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 94,
+              "Offset": 258,
+              "EndOffset": 263,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 94,
+              "Offset": 258,
+              "EndOffset": 421,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 91,
+              "Offset": 922,
+              "EndOffset": 927,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.ProfessorController/<UpdateProfessorAsync>d__7": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.ProfessorController/<UpdateProfessorAsync>d__7::MoveNext()": {
+          "Lines": {
+            "134": 0,
+            "135": 0,
+            "137": 0,
+            "138": 0,
+            "141": 0,
+            "143": 0,
+            "144": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "149": 0,
+            "150": 0,
+            "152": 0,
+            "153": 0,
+            "154": 0,
+            "155": 0,
+            "156": 0,
+            "157": 0,
+            "159": 0,
+            "161": 0,
+            "162": 0
+          },
+          "Branches": [
+            {
+              "Line": 137,
+              "Offset": 198,
+              "EndOffset": 200,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 137,
+              "Offset": 198,
+              "EndOffset": 218,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 143,
+              "Offset": 378,
+              "EndOffset": 383,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 143,
+              "Offset": 378,
+              "EndOffset": 541,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.ProfessorController/<DeleteProfessor>d__8": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.ProfessorController/<DeleteProfessor>d__8::MoveNext()": {
+          "Lines": {
+            "166": 0,
+            "167": 0,
+            "169": 0,
+            "170": 0,
+            "173": 0,
+            "175": 0,
+            "176": 0
+          },
+          "Branches": [
+            {
+              "Line": 169,
+              "Offset": 164,
+              "EndOffset": 166,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 169,
+              "Offset": 164,
+              "EndOffset": 181,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Controllers\\StudentAbsencesCotroller.cs": {
+      "TalesOfAForthGrade.Api.Controllers.StudentAbsencesController": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.StudentAbsencesController::.ctor(TalesOfAForthGrade.Api.Repositories.IStudentsRepository,TalesOfAForthGrade.Api.Repositories.IProfessorRepository,TalesOfAForthGrade.Api.Repositories.IAbsensesRepository)": {
+          "Lines": {
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.StudentAbsencesController/<>c": {
+        "TalesOfAForthGrade.Api.DTO.Absence.AbsenceDTO TalesOfAForthGrade.Api.Controllers.StudentAbsencesController/<>c::<GetStudentAbsencesAsync>b__4_0(TalesOfAForthGrade.Api.Entities.Absence)": {
+          "Lines": {
+            "34": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean TalesOfAForthGrade.Api.Controllers.StudentAbsencesController/<>c::<AddAbsence>b__5_0(System.Security.Claims.Claim)": {
+          "Lines": {
+            "44": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.StudentAbsencesController/<GetStudentAbsencesAsync>d__4": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.StudentAbsencesController/<GetStudentAbsencesAsync>d__4::MoveNext()": {
+          "Lines": {
+            "33": 0,
+            "36": 0,
+            "37": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.StudentAbsencesController/<AddAbsence>d__5": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.StudentAbsencesController/<AddAbsence>d__5::MoveNext()": {
+          "Lines": {
+            "42": 0,
+            "45": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "53": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "64": 0,
+            "67": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "81": 0,
+            "82": 0
+          },
+          "Branches": [
+            {
+              "Line": 47,
+              "Offset": 404,
+              "EndOffset": 406,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 47,
+              "Offset": 404,
+              "EndOffset": 475,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.StudentAbsencesController/<UpdateStudentAbsenceAsync>d__6": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.StudentAbsencesController/<UpdateStudentAbsenceAsync>d__6::MoveNext()": {
+          "Lines": {
+            "85": 0,
+            "86": 0,
+            "88": 0,
+            "89": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "101": 0,
+            "103": 0,
+            "104": 0
+          },
+          "Branches": [
+            {
+              "Line": 88,
+              "Offset": 175,
+              "EndOffset": 177,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 88,
+              "Offset": 175,
+              "EndOffset": 195,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Controllers\\StudentAssignmentsController.cs": {
+      "TalesOfAForthGrade.Api.Controllers.StudentAssignmentsController": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.StudentAssignmentsController::.ctor(TalesOfAForthGrade.Api.Repositories.IStudentsRepository,TalesOfAForthGrade.Api.Repositories.IProfessorRepository,TalesOfAForthGrade.Api.Repositories.IAssignmentsRepository)": {
+          "Lines": {
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.StudentAssignmentsController/<>c": {
+        "TalesOfAForthGrade.Api.DTO.Assignment.AssignmentDTO TalesOfAForthGrade.Api.Controllers.StudentAssignmentsController/<>c::<GetStudentAssignmentsAsync>b__4_0(TalesOfAForthGrade.Api.Entities.Assignment)": {
+          "Lines": {
+            "35": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean TalesOfAForthGrade.Api.Controllers.StudentAssignmentsController/<>c::<AddAssignment>b__5_0(System.Security.Claims.Claim)": {
+          "Lines": {
+            "45": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.StudentAssignmentsController/<GetStudentAssignmentsAsync>d__4": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.StudentAssignmentsController/<GetStudentAssignmentsAsync>d__4::MoveNext()": {
+          "Lines": {
+            "34": 0,
+            "37": 0,
+            "38": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.StudentAssignmentsController/<AddAssignment>d__5": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.StudentAssignmentsController/<AddAssignment>d__5::MoveNext()": {
+          "Lines": {
+            "43": 0,
+            "46": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "54": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "65": 0,
+            "68": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "82": 0,
+            "83": 0
+          },
+          "Branches": [
+            {
+              "Line": 48,
+              "Offset": 404,
+              "EndOffset": 406,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 48,
+              "Offset": 404,
+              "EndOffset": 475,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.StudentAssignmentsController/<UpdateStudentAssignmentAsync>d__6": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.StudentAssignmentsController/<UpdateStudentAssignmentAsync>d__6::MoveNext()": {
+          "Lines": {
+            "87": 0,
+            "88": 0,
+            "90": 0,
+            "91": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "99": 0,
+            "101": 0,
+            "102": 0
+          },
+          "Branches": [
+            {
+              "Line": 90,
+              "Offset": 175,
+              "EndOffset": 177,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 90,
+              "Offset": 175,
+              "EndOffset": 195,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Controllers\\StudentProfileController.cs": {
+      "TalesOfAForthGrade.Api.Controllers.StudentProfileController": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.StudentProfileController::.ctor(TalesOfAForthGrade.Api.Repositories.IStudentsRepository,TalesOfAForthGrade.Api.Repositories.IGradesRepository,TalesOfAForthGrade.Api.Repositories.ISubjectsRepository,TalesOfAForthGrade.Api.Repositories.IAbsensesRepository,TalesOfAForthGrade.Api.Repositories.IAssignmentsRepository)": {
+          "Lines": {
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "32": 0,
+            "34": 0,
+            "35": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.StudentProfileController/<>c": {
+        "System.Boolean TalesOfAForthGrade.Api.Controllers.StudentProfileController/<>c::<GetStudentAsync>b__3_0(System.Security.Claims.Claim)": {
+          "Lines": {
+            "41": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.StudentProfileController/<GetStudentAsync>d__3": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.StudentProfileController/<GetStudentAsync>d__3::MoveNext()": {
+          "Lines": {
+            "39": 0,
+            "43": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "51": 0,
+            "52": 0
+          },
+          "Branches": [
+            {
+              "Line": 45,
+              "Offset": 246,
+              "EndOffset": 248,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 45,
+              "Offset": 246,
+              "EndOffset": 281,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Controllers\\StudentsGradesController.cs": {
+      "TalesOfAForthGrade.Api.Controllers.StudentsGradesController": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.StudentsGradesController::.ctor(TalesOfAForthGrade.Api.Repositories.IStudentsRepository,TalesOfAForthGrade.Api.Repositories.IProfessorRepository,TalesOfAForthGrade.Api.Repositories.IGradesRepository)": {
+          "Lines": {
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.StudentsGradesController/<>c": {
+        "TalesOfAForthGrade.Api.DTO.Grade.GradeDTO TalesOfAForthGrade.Api.Controllers.StudentsGradesController/<>c::<GetAllGradesAsync>b__4_0(TalesOfAForthGrade.Api.Entities.Grade)": {
+          "Lines": {
+            "33": 0
+          },
+          "Branches": []
+        },
+        "TalesOfAForthGrade.Api.DTO.Grade.GradeDTO TalesOfAForthGrade.Api.Controllers.StudentsGradesController/<>c::<GetStudentGradesAsync>b__5_0(TalesOfAForthGrade.Api.Entities.Grade)": {
+          "Lines": {
+            "40": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean TalesOfAForthGrade.Api.Controllers.StudentsGradesController/<>c::<AddGrade>b__6_0(System.Security.Claims.Claim)": {
+          "Lines": {
+            "50": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.StudentsGradesController/<GetAllGradesAsync>d__4": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.StudentsGradesController/<GetAllGradesAsync>d__4::MoveNext()": {
+          "Lines": {
+            "31": 0,
+            "32": 0,
+            "34": 0,
+            "35": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.StudentsGradesController/<GetStudentGradesAsync>d__5": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.StudentsGradesController/<GetStudentGradesAsync>d__5::MoveNext()": {
+          "Lines": {
+            "39": 0,
+            "42": 0,
+            "43": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.StudentsGradesController/<AddGrade>d__6": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.StudentsGradesController/<AddGrade>d__6::MoveNext()": {
+          "Lines": {
+            "48": 0,
+            "51": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "61": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "71": 0,
+            "74": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "88": 0,
+            "89": 0
+          },
+          "Branches": [
+            {
+              "Line": 53,
+              "Offset": 404,
+              "EndOffset": 406,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 53,
+              "Offset": 404,
+              "EndOffset": 497,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.StudentsGradesController/<UpdateStudentGradeAsync>d__7": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.StudentsGradesController/<UpdateStudentGradeAsync>d__7::MoveNext()": {
+          "Lines": {
+            "93": 0,
+            "94": 0,
+            "96": 0,
+            "97": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "110": 0,
+            "112": 0,
+            "113": 0
+          },
+          "Branches": [
+            {
+              "Line": 96,
+              "Offset": 175,
+              "EndOffset": 177,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 96,
+              "Offset": 175,
+              "EndOffset": 195,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "D:\\.net\\tales-of-a-fourth-grade\\Project\\TalesOfAForthGrade\\TalesOfAForthGrade.Api\\Controllers\\StudentsInfoController.cs": {
+      "TalesOfAForthGrade.Api.Controllers.StudentsInfoController": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.StudentsInfoController::.ctor(TalesOfAForthGrade.Api.Repositories.IStudentsRepository,TalesOfAForthGrade.Api.Repositories.IGradesRepository,TalesOfAForthGrade.Api.Repositories.ISubjectsRepository,TalesOfAForthGrade.Api.Repositories.IAbsensesRepository,TalesOfAForthGrade.Api.Repositories.IAssignmentsRepository)": {
+          "Lines": {
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "28": 2,
+            "30": 1,
+            "32": 1,
+            "33": 1
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.StudentsInfoController/<>c": {
+        "TalesOfAForthGrade.Api.DTO.Student.StudentDTO TalesOfAForthGrade.Api.Controllers.StudentsInfoController/<>c::<GetStudentsAsync>b__3_0(TalesOfAForthGrade.Api.Entities.Student)": {
+          "Lines": {
+            "39": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.StudentsInfoController/<GetStudentsAsync>d__3": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.StudentsInfoController/<GetStudentsAsync>d__3::MoveNext()": {
+          "Lines": {
+            "37": 0,
+            "38": 0,
+            "40": 0,
+            "41": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.StudentsInfoController/<GetStudentAsync>d__4": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.StudentsInfoController/<GetStudentAsync>d__4::MoveNext()": {
+          "Lines": {
+            "45": 1,
+            "47": 1,
+            "49": 2,
+            "50": 1,
+            "51": 1,
+            "52": 1,
+            "55": 0,
+            "56": 1
+          },
+          "Branches": [
+            {
+              "Line": 49,
+              "Offset": 175,
+              "EndOffset": 177,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 49,
+              "Offset": 175,
+              "EndOffset": 210,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.StudentsInfoController/<CreateStudentAsync>d__5": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.StudentsInfoController/<CreateStudentAsync>d__5::MoveNext()": {
+          "Lines": {
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "71": 0,
+            "73": 0,
+            "74": 0
+          },
+          "Branches": []
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.StudentsInfoController/<CreateStudentsAsync>d__6": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.StudentsInfoController/<CreateStudentsAsync>d__6::MoveNext()": {
+          "Lines": {
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "83": 0,
+            "84": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "105": 0,
+            "106": 0,
+            "108": 0,
+            "109": 0
+          },
+          "Branches": [
+            {
+              "Line": 81,
+              "Offset": 488,
+              "EndOffset": 60,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 81,
+              "Offset": 488,
+              "EndOffset": 493,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.StudentsInfoController/<UpdateStudentAsync>d__7": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.StudentsInfoController/<UpdateStudentAsync>d__7::MoveNext()": {
+          "Lines": {
+            "113": 0,
+            "114": 0,
+            "116": 0,
+            "117": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "126": 0,
+            "128": 0,
+            "129": 0
+          },
+          "Branches": [
+            {
+              "Line": 116,
+              "Offset": 175,
+              "EndOffset": 177,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 116,
+              "Offset": 175,
+              "EndOffset": 195,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "TalesOfAForthGrade.Api.Controllers.StudentsInfoController/<DeleteStudent>d__8": {
+        "System.Void TalesOfAForthGrade.Api.Controllers.StudentsInfoController/<DeleteStudent>d__8::MoveNext()": {
+          "Lines": {
+            "133": 0,
+            "134": 0,
+            "136": 0,
+            "137": 0,
+            "140": 0,
+            "142": 0,
+            "143": 0
+          },
+          "Branches": [
+            {
+              "Line": 136,
+              "Offset": 164,
+              "EndOffset": 166,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 136,
+              "Offset": 164,
+              "EndOffset": 181,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -47,6 +47,19 @@ h1 {
 .intrari:hover {
     cursor: pointer;
     font-weight: bold;
+    text-align: center;
+}
+
+.fa-sign-out-alt{
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  color: red;
+}
+
+.clickable{
+  cursor: pointer;
 }
 
 .active{
